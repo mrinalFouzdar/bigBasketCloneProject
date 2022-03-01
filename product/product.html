@@ -14,19 +14,54 @@
 <body>
     <header id="header">
         <div id="header1">
-            <div><i class="fa fa-phone"></i>1860 123 1000</div>
+            <div><i class="fa fa-phone" style="font-size: 20px;"></i>1860 123 1000</div>
+            <div id="location_main_div">
+                <i class="material-icons" style="font-size: 17px;">place</i>
+                <select name="location_selcet" id="select">
+                    <option value="">560004,bangalore</option>
+                    <option value="">KOLKATA</option>
+                    <option value="">DELHI</option>
+                    <option value="">PUNE</option>
+                </select>
 
-            <div> <i class="material-icons">place</i> 560004,Bangalore</div>
-            <div class="signin" onclick="signin()"><i class="material-icons">person</i>Login/Sign In</div>
-            <div id="showname"></div>
+            </div>
+            <!-- <div> <i class="material-icons" style="font-size: 17px;">place</i>&nbsp;560004,Bangalore</div> -->
+            <div class="signin" onclick="signin()">
+                <i class="material-icons" style="font-size: 17px;">person</i>&nbsp; Login/Sign In</div>
+            <div id=" showname "></div>
 
             <div>
-                <span onclick="closeOption()" class="sign-close">X</span>
-                <div id="signup"></div>
-                <input type="text" id="mobile-email" placeholder="Mobile / Email">
-                <button onclick="userdata()">Proceed</button>
+                <!-- <span onclick="closeOption() " class="sign-close ">X</span>
+                <div id="signup "></div>
+                <input type="text " id="mobile-email " placeholder="Mobile / Email ">
+                <input type="text" id="name" placeholder="Name">
+                <button onclick="userdata() ">Proceed</button> -->
             </div>
 
+        </div>
+
+        <div id="header2">
+            <div id="logoheader"><img src="bigbasket1.png" alt=""></div>
+            <div id="searchitem">
+                <div><input type="text" name="" id=""></div>
+                <div> <i class="material-icons" style="font-size: 20px;">search</i></div>
+            </div>
+            <div id="cartheader">
+                <div id="cartimg"><img src="basket.png" alt=""></div>
+                <div id="cartqunt" onclick="cartpage()">
+                    <samp>My Basket</samp>
+                    <p style="margin: 0px;"><span id="cartnum">0</span>&nbsp;Item</p>
+                </div>
+            </div>
+        </div>
+        <div id="categorypart">
+            <div class="categorypart1">
+                <!-- dropdown -->
+                <div class="category">
+                    <p>SHOP BY CATEGORY</p>
+
+                </div>
+            </div>
         </div>
     </header>
 </body>
