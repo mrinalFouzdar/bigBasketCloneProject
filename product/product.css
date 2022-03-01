@@ -1,0 +1,10 @@
+#header {
+    width: 80%;
+    margin: auto;
+}
+
+#header1 {
+    display: flex;
+    justify-content: end;
+    gap: 2%;
+}
