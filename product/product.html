@@ -31,11 +31,11 @@
             <div id=" showname "></div>
 
             <div>
-                <span onclick="closeOption() " class="sign-close ">X</span>
+                <!-- <span onclick="closeOption() " class="sign-close ">X</span>
                 <div id="signup "></div>
                 <input type="text " id="mobile-email " placeholder="Mobile / Email ">
                 <input type="text" id="name" placeholder="Name">
-                <button onclick="userdata() ">Proceed</button>
+                <button onclick="userdata() ">Proceed</button> -->
             </div>
 
         </div>
@@ -156,9 +156,9 @@
         <a href="">FRUITS & VEGETABLES</a>
     </div>
     <div id="vikalp"></div>
-    <!-- <center id="centerimg">
+    <center id="centerimg">
         <img src="https://www.bigbasket.com/media/uploads/flatpages/test-1/Fruits%20&%20vegetables.jpg" alt="">
-    </center> -->
+    </center>
     <div id="vegcontainer">
 
 
@@ -179,23 +179,72 @@
                     <p>Rice & Rice Products(394)</p>
                 </div>
             </div>
+
+            <div id="brand">
+                <p>Brand</p>
+                <hr id="hr">
+                <div style="border: 1px solid black; width: 190px; border-radius: 5%;">
+                    <input type="search" placeholder="Search By Brand " id="search" style="border: none;">
+                    <i class="material-icons" style="font-size: 15px;">search</i>
+                </div>
+                <!-- <button id="brandsearch" onclick="search()">search</button> -->
+                <div id="fresho">
+                    <input type="checkbox" id="fresh" onchange="filterfesho()">
+                    <p>Fresho</p>
+                </div>
+                <div id="bbcombo">
+                    <input type="checkbox" name="" id="bb" onchange="filterbb()">
+                    <p>bb Combo</p>
+                </div>
+                <div id="Gopalan">
+                    <input type="checkbox" name="" id="bb" onchange="filterGopalan()">
+                    <p>Gopalan Organic</p>
+                </div>
+                <div id="Hoovu">
+                    <input type="checkbox" name="" id="bb" onchange="filterHoovu()">
+                    <p>Hoovu Fresh</p>
+                </div>
+                <div id="Simply">
+                    <input type="checkbox" name="" id="bb" onchange="filterSimply()">
+                    <p>Simply Fresh</p>
+                </div>
+                <div id="Simply">
+                    <input type="checkbox" name="" id="bb" onchange="filterSimply()">
+                    <p>Simply Fresh</p>
+                </div>
+                <div id="Supa">
+                    <input type="checkbox" name="" id="bb" onchange="filterSupa()">
+                    <p>Supa Corn</p>
+                </div>
+                <div id="Tadaa">
+                    <input type="checkbox" name="" id="bb" onchange="filterTadaa()">
+                    <p>Tadaa</p>
+                </div>
+            </div>
+
         </div>
-        <div id="brand">
-            <p>Brand</p>
-            <hr id="hr">
-            <div style="border: 1px solid black; width: 190px; border-radius: 5%;">
-                <input type="search" placeholder="Search By Brand " id="search" style="border: none;">
-                <i class="material-icons" style="font-size: 15px;">search</i>
+
+
+        <!-- databox -->
+        <div id="databox">
+            <div id="upperbox">
+                <div id="heading">
+                    <div>
+                        <p>Fruits & Vegetables(379)</p>
+                    </div>
+                    <div id="truckimg"><img src="https://www.bbassets.com/static/v2514/custPage/build/content/img/standard-del.svg" />
+                        <p>ALL PRODUCTS</p>
+                    </div>
+                </div>
+                <div>
+                    <select name="" id="sorting" onchange="pricesort()">
+                     <option value="--">Popularity</option>
+                     <option value="l2h">Price-Low to High</option>
+                     <option value="h2l">Price-High to Low</option>
+                 </select>
+                </div>
             </div>
-            <button id="brandsearch" onclick="search()">search</button>
-            <div id="fresho">
-                <p>Fresho</p>
-                <input type="checkbox" id="fresh" onchange="filterfesho()">
-            </div>
-            <div id="bbcombo">
-                <p>bb Combo</p>
-                <input type="checkbox" name="" id="bb" onchange="filterbb()">
-            </div>
+            <div id="innerbox"></div>
         </div>
 
     </div>

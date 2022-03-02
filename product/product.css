@@ -206,6 +206,10 @@
     background-color: white;
 }
 
+#home {
+    margin-left: 10%;
+}
+
 
 /* login signup */
 
@@ -276,6 +280,7 @@
 
 #vegcontainer {
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     gap: 10px;
     margin-bottom: 25px
@@ -289,7 +294,7 @@
 .first {
     width: 25%;
     margin-bottom: -9px;
-    border-bottom: 2px solid greenyellow;
+    border-bottom: 2.5px solid greenyellow;
     padding-bottom: 5px;
     color: #000;
 }
@@ -300,8 +305,54 @@
     line-height: 6px;
 }
 
-#fruits>div {
+#first>div {
     margin-left: 11px;
     line-height: 11px;
     font-size: 20px;
+}
+
+#brand>p {
+    width: 20%;
+    margin-bottom: -10px;
+    border-bottom: 2.5px solid greenyellow;
+    padding-bottom: 6px;
+    color: black;
+}
+
+#brand>input {
+    width: 85%;
+}
+
+#fresho,
+#bbcombo,
+#Gopalan,
+#Hoovu,
+#Simply,
+#Supa,
+#Tadaa {
+    display: flex;
+}
+
+#fresho {
+    margin-top: 8px;
+    /* margin-bottom: -10px; */
+}
+
+#fresho>p,
+#bbcombo>p,
+#Gopalan>p,
+#Hoovu>p,
+#Simply>p,
+#Supa>p,
+#Tadaa>p {
+    font-size: 14px;
+    margin-top: 1px;
+}
+
+
+/* databox */
+
+#databox {
+    width: 60%;
+    border-left: 1px solid whitesmoke;
 }
