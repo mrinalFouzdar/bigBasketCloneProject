@@ -1,6 +1,7 @@
 #header {
     width: 80%;
     margin: auto;
+    /* position: absolute; */
 }
 
 #header1 {
@@ -110,10 +111,13 @@
 
 .category {
     display: flex;
-    padding-right: 1%;
+    text-align: center;
+    /* padding-right: 1%; */
     background-color: #84c225;
     color: #e4e4e4;
-    padding-right: 3%;
+    padding: 1%;
+    padding-top: 0%;
+    padding-bottom: 0%;
 }
 
 .tag {
@@ -123,6 +127,8 @@
 }
 
 .categoryhover {
+    /* margin-top: 5%; */
+    margin-left: -0.8%;
     display: flex;
     width: 79%;
     position: absolute;
