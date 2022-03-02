@@ -212,11 +212,11 @@
 
 
 /* sign in page */
-#sign_in_box{
+
+#sign_in_box {
     display: none;
     /* flex-direction: column; */
     flex-direction: column;
-
     position: fixed;
     top: 100px;
     left: 520px;
@@ -224,39 +224,29 @@
     width: 45%px;
     border: 1px solid black;
     padding: 10px;
-
     background-color: white;
     box-sizing: border-box;
 }
 
-
-
-#sign_in_box>span{
+#sign_in_box>span {
     margin-left: 95%;
     color: brown;
     cursor: pointer;
-
 }
 
-#number_email,#name{
+#number_email,
+#name {
     margin: 10px;
     margin-bottom: 50px;
     padding: 10px;
     border: none;
     border-bottom: 1px solid rgb(24, 24, 27);
-
 }
 
-#name + button{
-
- margin-top: 96%;
- border: none;
- background-color: aqua;
- height: 35px;
- color: white;
+#name+button {
+    margin-top: 96%;
+    border: none;
+    background-color: aqua;
+    height: 35px;
+    color: white;
 }
-
-
-
-
-
