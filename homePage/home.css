@@ -214,11 +214,11 @@
 
 
 /* sign in page */
-#sign_in_box{
+
+#sign_in_box {
     display: none;
     /* flex-direction: column; */
     flex-direction: column;
-
     position: fixed;
     top: 100px;
     left: 520px;
@@ -226,38 +226,44 @@
     width: 30%;
     border: 1px solid black;
     padding: 10px;
-
     background-color: white;
     box-sizing: border-box;
     z-index: 1000;
 }
 
-
-
-#sign_in_box>span{
+#sign_in_box>span {
     margin-left: 95%;
     color: brown;
     cursor: pointer;
-
 }
 
-#number_email,#name{
+#number_email,
+#name {
     margin: 10px;
     margin-bottom: 50px;
     padding: 10px;
     border: none;
     border-bottom: 1px solid rgb(24, 24, 27);
-
 }
 
-#name + button{
 
- margin-top: 46%;
- border: none;
- background-color: aqua;
- height: 35px;
- color: white;
- box-sizing: border-box;
+/* */
+
+#name+button {
+    margin-top: 96%;
+    border: none;
+    background-color: aqua;
+    height: 35px;
+    color: white;
+}
+
+#name+button {
+    margin-top: 46%;
+    border: none;
+    background-color: aqua;
+    height: 35px;
+    color: white;
+    box-sizing: border-box;
 }
 
 
@@ -270,7 +276,7 @@
 
 }
 
-#slide1 img{
+#slide1 img {
     width: 100%;
     padding-top: 1%;
 }
@@ -305,13 +311,12 @@
 	border-radius: 0 3px 3px 0;
 }
 
-
 /* after slide show grid */
 
-.after_slide1_grid{
+.after_slide1_grid {
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     padding-left: 12%;
     padding-top: 2%;
 }
@@ -376,7 +381,7 @@
     margin-bottom: 0%;
 }
 
-.bank_grid{
+.bank_grid {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
