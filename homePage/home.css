@@ -221,12 +221,13 @@
     top: 100px;
     left: 520px;
     height: 70%;
-    width: 45%px;
+    width: 30%;
     border: 1px solid black;
     padding: 10px;
 
     background-color: white;
     box-sizing: border-box;
+    z-index: 1000;
 }
 
 
@@ -249,14 +250,71 @@
 
 #name + button{
 
- margin-top: 96%;
+ margin-top: 46%;
  border: none;
  background-color: aqua;
  height: 35px;
  color: white;
+ box-sizing: border-box;
+}
+
+
+/* slide show1st */
+
+#slide1 {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+#slide1 img{
+    width: 100%;
+    padding-top: 1%;
 }
 
 
 
+/* after slide show grid */
 
+.after_slide1_grid{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding-left: 12%;
+    padding-top: 2%;
+}
+#bigsave{
+    margin-left: 12%;
+    margin-right: 9%;
+    border: 1px solid rgb(202, 197, 197);
+    padding: 0%;
+}
+#bigsave img{
+  width: 100%;
+  padding-right: 0%;
+  align-items: center;
+}
 
+/* bank offers */
+
+#bank{
+    text-align: center;
+}
+#bank > p{
+    font-size: xx-large;
+    margin-bottom: 0%;
+}
+
+.bank_grid{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 12%;
+    padding-top: 2%;
+    border-top: 1px solid rgb(148, 148, 148);
+}
+
+.bank_grid>div>img{
+    width: 270px;
+    height: 270px;
+}
