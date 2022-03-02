@@ -45,7 +45,7 @@
         <div id="header2">
             <div id="logoheader"><img src="logoo.png" alt=""></div>
             <div id="searchitem">
-                <div><input type="text" name="" id="" class="searchinput" placeholder="search"></div>
+                <div><input type="text" name="" id="" class="searchinput" placeholder="Search for products..."></div>
                 <div class="searchicon"> <i class="material-icons" style="font-size: 23px;">search</i></div>
             </div>
             <div id="cartheader">
@@ -154,9 +154,12 @@
 
     <!-- slide show1st -->
 
-    <div id="slide1"> </div>
+    <div id="slide1">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+   </div>
     <div class="after_slide1_grid">
-        <div><img src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_emf_190x60_250222.png" alt=""></div>
+        <div><img src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_emf_190x60_250222.png" alt=""> </button></div>
         <div><img src="	https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_bbstar_190x60_250222.png" alt=""></div>
         <div><img src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_precautionary_190x60_250222.png" alt=""></div>
         <div><img src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_faq_190x60_250222.png" alt=""></div>
@@ -165,13 +168,14 @@
 
     </div>
 
-    <div id="bigsave">
-     
-            <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_cmc_m_bill-buster-1_400_280222.jpg" alt="">
+    <div class="bigsave">
+        <a class="left_slid" onclick="big_Slides(-1)">&#10094;</a>
+        <a class="right_slid" onclick="big_Slides(1)">&#10095;</a>
       
     </div>
 
-    <div id="bank">
+    <!-- bank portion -->
+    <div class="bank">
         <p>Bank Offers</p>
         <div class="bank_grid">
             <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/e7da0b1c-87d2-463c-97ea-0262fcf7c315/hp_aff_m_federal_360_010322.jpg" alt=""></div>
@@ -180,8 +184,271 @@
             <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/e7da0b1c-87d2-463c-97ea-0262fcf7c315/hp_aff_m_federal_360_010322.jpg" alt=""></div>
         </div>
     </div>
-    
+
+    <!--Best sellers  -->
+    <!-- <div id="best_sellers">
+        <div id="p_view">
+            <p>Best Sellers</p>
+        </div>
+    </div> -->
+
+
+<!-- Most popular Items -->
+    <div id="most_popular">
+        <p>Most Popular</p>
+        <div class="bank_grid most_popular_div">
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/d8861bb3-f8b3-40a1-a90f-1287a82c20ff/hp_b&h_m_holi_480_250222_01.jpg" alt=""></div>
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/d8861bb3-f8b3-40a1-a90f-1287a82c20ff/hp_b&h_m_ayurveda_480_250222_01.jpg" alt=""></div>
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/d8861bb3-f8b3-40a1-a90f-1287a82c20ff/hp_b&h_m_deo_480_250222_01.jpg" alt=""></div>
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/d8861bb3-f8b3-40a1-a90f-1287a82c20ff/hp_b&h_m_masks-gloves_480_250222_03.jpg" alt=""></div>
+        </div>
+    </div>
+
+
+    <!-- Top offers -->
+
+    <div class="bank">
+        <p>Top Offers</p>
+        <div class="bank_grid">
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/a8e20e8e-f969-4b17-98a0-18a7a180b09a/hp_cmc_m_dow_m_480_250222_01.jpg" alt=""></div>
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/a8e20e8e-f969-4b17-98a0-18a7a180b09a/hp_cmc_m_bigpacks_480_250222_02.jpg" alt=""></div>
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/a8e20e8e-f969-4b17-98a0-18a7a180b09a/hp_cmc_m_combos_480_250222_03.jpg" alt=""></div>
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/a8e20e8e-f969-4b17-98a0-18a7a180b09a/hp_cmc_m_rs-30corner_480_250222_04.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <!-- fruit & vegetables div grid -->
+
+    <p class="p_veg">Fruirs & Vegetables</p><hr>
+    <div class="veg_div">
+        <div class="a">
+            <img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/8e8ff6aa-1b80-468d-87d6-1253032d1db2/hp_under_10_fnvStorefront_m_250222_01.jpg" alt="">
+        </div>
+
+        <div class="b">
+            <img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/8e8ff6aa-1b80-468d-87d6-1253032d1db2/hp_f&v_c_fresh-fruits_184_250222.jpg" alt="">
+        </div>
+
+        <div class="c">
+            <img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/8e8ff6aa-1b80-468d-87d6-1253032d1db2/hp_f&v_c_fresh-vegetables_184_250222.jpg" alt="">
+        </div>
+
+        <div class="d">
+            <img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/8e8ff6aa-1b80-468d-87d6-1253032d1db2/hp_f&v_c_herbs-seasonal_184_250222.jpg" alt="">
+        </div>
+
+        <div class="e">
+            <img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/8e8ff6aa-1b80-468d-87d6-1253032d1db2/hp_f&v_c_exotic_184_250222.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Your dealy stapss -->
+    <div class="dealy">
+        <p>Your Daily Staples</p>
+        <div class="staples">
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/e48949e8-8431-4e64-a88d-6c5ac43edac9/hp_fom_c_atta-flour_360_250222_Nagpur.jpg" alt=""></div>
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/e48949e8-8431-4e64-a88d-6c5ac43edac9/hp_fom_c_rice-rice_360_250222_Nagpur.jpg" alt=""></div>
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/e48949e8-8431-4e64-a88d-6c5ac43edac9/hp_fom_c_dals-pulses_360_250222_Nagpur.jpg" alt=""></div>
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/e48949e8-8431-4e64-a88d-6c5ac43edac9/hp_fom_c_cooking-oil_360_250222_Nagpur.jpg" alt=""></div>
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/e48949e8-8431-4e64-a88d-6c5ac43edac9/hp_fom_c_dry-fruits_360_250222_Nagpur.jpg" alt=""></div>
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/e48949e8-8431-4e64-a88d-6c5ac43edac9/hp_fom_c_salt-sugar_360_250222_Nagpur.jpg" alt=""></div>
+        </div>
+    </div>
+
+
+
+    <!-- beverages -->
+    <p class="p_veg">Beverages</p><hr>
+    <div class="veg_div">
+        <div class="a">
+            <img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/2714f370-3e75-4a17-9bb5-07db70915ba8/hp_bev_c_soups_378_250222.jpg" alt="">
+        </div>
+
+        <div class="b">
+            <img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/2714f370-3e75-4a17-9bb5-07db70915ba8/hp_bev_c_tea_184_250222.jpg" alt="">
+        </div>
+
+        <div class="c">
+            <img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/2714f370-3e75-4a17-9bb5-07db70915ba8/hp_bev_c_coffee_184_250222.jpg" alt="">
+        </div>
+
+        <div class="d">
+            <img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/2714f370-3e75-4a17-9bb5-07db70915ba8/hp_bev_c_flavoured_184_250222.jpg" alt="">
+        </div>
+
+        <div class="e">
+            <img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/2714f370-3e75-4a17-9bb5-07db70915ba8/hp_bev_c_soft-drinks_184_250222.jpg" alt="">
+        </div>
+    </div>
+
+
+    <!-- Snacks Store -->
+    <div class="bank">
+        <p>Snacks Store</p>
+        <div class="bank_grid most_popular_div">
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/82e7f0cb-9912-48b9-8e3f-80009706d91e/hp_sbf_c_namkeens_360_250222.jpg" alt=""></div>
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/82e7f0cb-9912-48b9-8e3f-80009706d91e/hp_emf_c_frozen-snacks-more_360_250222.jpg" alt=""></div>
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/82e7f0cb-9912-48b9-8e3f-80009706d91e/hp_sbf_c_noodles_360_250222.jpg" alt=""></div>
+            <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/82e7f0cb-9912-48b9-8e3f-80009706d91e/hp_sbf_c_biscuits-cookies_360_250222.jpg" alt=""></div>
+        </div>
+    </div>
 </body>
 
-</html>
+
+<!-- Personal Care -->
+
+<div class="bank">
+    <p>Personal Care</p>
+    <div class="bank_grid most_popular_div">
+        <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/0315907f-11c0-4fac-b47c-69e73978a9d8/hp_c&h_c_cough_360_250222.jpg" alt=""></div>
+        <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/0315907f-11c0-4fac-b47c-69e73978a9d8/hp_c&h_c_shower_360_250222.jpg" alt=""></div>
+        <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/0315907f-11c0-4fac-b47c-69e73978a9d8/hp_c&h_c_women_360_250222.jpg" alt=""></div>
+        <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/0315907f-11c0-4fac-b47c-69e73978a9d8/hp_c&h_c_bath_360_250222.jpg" alt=""></div>
+    </div>
+</div>
+
+
+<!-- Beauty and Hygiene -->
+
+<p class="p_veg">Beauty and Hygiene</p><hr>
+<div class="veg_div">
+    <div class="a">
+        <img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/755b5488-5f87-4143-b415-79101d05b90b/hp_b&h_c_makeup-mania_378_250222.jpg" alt="">
+    </div>
+
+    <div class="b">
+        <img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/755b5488-5f87-4143-b415-79101d05b90b/hp_b&h_c_summer-skin-care_184_250222.jpg" alt="">
+    </div>
+
+    <div class="c">
+        <img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/755b5488-5f87-4143-b415-79101d05b90b/hp_b&h_c_summer-deos_184_250222.jpg" alt="">
+    </div>
+
+    <div class="d">
+        <img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/755b5488-5f87-4143-b415-79101d05b90b/hp_b&h_c_woman-wellness_184_250222.jpg" alt="">
+    </div>
+
+    <div class="e">
+        <img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/755b5488-5f87-4143-b415-79101d05b90b/hp_b&h_shaving_m_250222_03.jpg" alt="">
+    </div>
+</div>
+
+<!-- Home & Kitchen Essentials -->
+
+<div class="dealy">
+    <p>Home & Kitchen Essentials</p>
+    <div class="staples">
+        <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/926bb02d-53a3-4453-96e9-ac62f3a893cf/hp_kgp_c_under-149_250222_01.jpg" alt=""></div>
+        <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/926bb02d-53a3-4453-96e9-ac62f3a893cf/hp_kgp_c_rs_150-299_250222_02.jpg" alt=""></div>
+        <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/926bb02d-53a3-4453-96e9-ac62f3a893cf/hp_kgp_c_pressure_250222_03.jpg" alt=""></div>
+        <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/926bb02d-53a3-4453-96e9-ac62f3a893cf/hp_kgp_c_glassware_250222_04.jpg" alt=""></div>
+        <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/926bb02d-53a3-4453-96e9-ac62f3a893cf/hp_kgp_c_kitchen_250222_05.jpg" alt=""></div>
+        <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/926bb02d-53a3-4453-96e9-ac62f3a893cf/hp_kgp_c_batteries_250222_06.jpg" alt=""></div>
+    </div>
+</div>
+
+
+
+<!-- third slid show -->
+
+
+<div id="third_slid">
+    <a class="left_slid" onclick="third_click_Slides(-1)">&#10094;</a>
+    <a class="right_slid" onclick="third_click_Slides(1)">&#10095;</a>
+</div>
+</body>
+
+
+<!-- Brand Store -->
+<div class="dealy">
+    <p>Brand Store</p>
+    <div class="staples">
+        <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/8518df44-21e4-45f6-a178-534330cd273d/hp_brandstoreLinear_m_amul_360_250222.jpg" alt=""></div>
+        <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/8518df44-21e4-45f6-a178-534330cd273d/hp_brandstoreLinear_m_dettol_360_250222.jpg" alt=""></div>
+        <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/8518df44-21e4-45f6-a178-534330cd273d/hp_brandstoreLinear_m_cocacola_360_250222.jpg" alt=""></div>
+        <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/8518df44-21e4-45f6-a178-534330cd273d/hp_brandstoreLinear_m_loreal_360_250222.jpg" alt=""></div>
+        <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/8518df44-21e4-45f6-a178-534330cd273d/hp_brandstoreLinear_m_indiagate_360_250222.jpg" alt=""></div>
+        <div><img src="https://www.bigbasket.com/media/customPage/8b73190c-8eda-4a77-b416-3b04e5bbec6e/4f3a04eb-b172-4ede-baf0-b77f718e39e9/8518df44-21e4-45f6-a178-534330cd273d/hp_brandstoreLinear_m_durex_360_250222.jpg" alt=""></div>
+    </div>
+</div>
+
+
+<!-- last slid show -->
+
+<p class="p_veg">Featured Recipes</p><hr>
+<div id="last_slid">
+    <a class="left_slid" onclick="last_click_Slides(-1)">&#10094;</a>
+    <a class="right_slid" onclick="last_click_Slides(1)">&#10095;</a>
+</div>
+
+
+<!-- read -->
+
+    <!-- footer -->
+    <footer>
+        <div id="footer">
+            <div class="parent1">
+                <div class="child">
+                    <h4 style="color: green;">bigbasket</h4>
+                    <p>About Us</p>
+                    <p>In News</p>
+                    <p>Green bigbasket</p>
+                    <p>Privacy Policy</p>
+                    <p>Affiliate</p>
+                    <p>Terms and Conditions</p>
+                    <p>Careers At bigbasket</p>
+                    <p>bb Instant</p>
+                    <p>bb Daily</p>
+                    <p>bb Blog</p>
+
+
+                </div>
+                <div class="child">
+                    <h4 style="color: green;">Help</h4>
+                    <p>FAQs</p>
+                    <p>Contact Us</p>
+                    <p>bb Wallet FAQs</p>
+                    <p>bb Wallet T&Cs</p>
+                    <p>Vendor Connect</p>
+                </div>
+                <div class="child">
+                    <h4 style="color: green;">Download Our App</h4>
+                    <div><img src="https://www.bbassets.com/static/v2514/custPage/build/content/img/Google-App-store-icon.png" alt=""></div>
+                    <div><img src="https://www.bbassets.com/static/v2514/custPage/build/content/img/Apple-App-store-icon.png" alt=""></div>
+                </div>
+                <div class="child">
+                    <h4 style="color: green;">Download Our App</h4>
+                    <div style="display: flex;">
+                        <div class="ja"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png" alt="" style="height: 42px;width: 43px; padding: 0px 5px 5px 5px; "></div>
+                        <div class="ja"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTBjAAckYjOVIIsiqhARym2rHjJ2i2JiyH4Q&usqp=CAU" alt="" style="height: 40px;width: 40px;padding: 0px 5px 5px 5px; "></div>
+                        <div class="ja"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQstfv9_bPbqdcnazcz6VzU5PF7NggkPuG03Q&usqp=CAU" alt="" style="height: 40px;width: 40px; padding: 0px 5px 5px 5px;"></div>
+                        <div class="ja"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRaekzA4ZW-1ZXQdwSVSlVBcTCoa6SyiAIaQ&usqp=CAU" alt="" style="height: 40px;width: 40px;padding: 0px 5px 5px 5px; "></div>
+                    </div>
+                </div>
+            </div>
+            <div class="parent2">
+                <div class="child2" style="display:flex">
+                    <h4 style="color: green;">POPULAR CATEGORIES:</h4>
+                    <p>
+                        Sunflower Oils, Wheat Atta, Ghee, Milk, Health Drinks, Flakes, Organic F&V, Namkeen, Eggs, Floor Cleaners, Other Juices, Leafy Vegetables, Frozen Veg Food, Diapers & Wipes,</p>
+                </div>
+                <div class="child2" style="display: flex;">
+                    <h4 style="color: green;">POPULAR BRAND:</h4>
+                    <p>
+                        Amul, Nescafe , MTR, Red Bull, elite cake, Pediasure, Yummiez, Yera, Yakult, Britannia, Wow Momo, Fortune , Haldirams , Ferrero, Lays, Patanjali, McCain, kwality walls, Cadbury Dairy Milk, Pedigree,</p>
+                </div>
+                <div class="child2" style="display: flex;">
+                    <h4 style="color: green;"> CITIES WE SERVE:</h4>
+                    <p>Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Mysore, Madurai, Coimbatore, Vijayawada-Guntur, Kolkata, Ahmedabad-Gandhinagar, Nashik, Lucknow-Kanpur, Gurgaon, Vadodara, Visakhapatnam,</p>
+                </div>
+                <div class="child2" style="display: flex;">
+                    <h4 style="color: green;"> PAYMENT OPTIONS: &#160 &#160 &#160 </h4>
+                    <img src="https://www.co.benton.or.us/sites/default/files/styles/full_node_primary_extra_wide/public/imageattachments/health/page/3908/logos.jpg?itok=Kz-SSNtq" alt="" style="height: 50%;width: 60%;">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
 <script src="./home.js"></script>
+</html>
