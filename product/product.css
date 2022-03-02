@@ -278,6 +278,10 @@
 
 /* slider */
 
+#food {
+    font-size: 10px;
+}
+
 #vegcontainer {
     display: flex;
     /* flex-direction: column; */
@@ -311,7 +315,10 @@
     font-size: 20px;
 }
 
-#brand>p {
+#brand>p,
+#Seasonal>p,
+#country>p,
+#Discount>p {
     width: 20%;
     margin-bottom: -10px;
     border-bottom: 2.5px solid greenyellow;
@@ -319,7 +326,8 @@
     color: black;
 }
 
-#brand>input {
+#brand>input,
+#Seasonal>input {
     width: 85%;
 }
 
@@ -329,7 +337,19 @@
 #Hoovu,
 #Simply,
 #Supa,
-#Tadaa {
+#Tadaa,
+#Summer,
+#SummerVeggies,
+#Winterfruits,
+#winterveggies,
+#India,
+#Australia,
+#China,
+#Italy,
+#upto5,
+#upto5to10,
+#upto10to15,
+#Morethan {
     display: flex;
 }
 
@@ -344,7 +364,19 @@
 #Hoovu>p,
 #Simply>p,
 #Supa>p,
-#Tadaa>p {
+#Tadaa>p,
+#Summer>p,
+#SummerVeggies>p,
+#Winterfruits>p,
+#winterveggies>p,
+#India>p,
+#Australia>p,
+#China>p,
+#Italy>p,
+#upto5>p,
+#upto5to10>p,
+#upto10to15>p,
+#Morethan>p {
     font-size: 14px;
     margin-top: 1px;
 }
@@ -356,3 +388,71 @@
     width: 60%;
     border-left: 1px solid whitesmoke;
 }
+
+
+/* footer */
+
+#discription {
+    width: 80%;
+    margin: auto;
+    /* border: 0.5px solid rgba(145, 146, 150, 0.534); */
+    margin-bottom: 1%;
+    padding: 1%;
+    box-shadow: inset 0 0 3em rgba(0, 0, 0, 0.1);
+    /* background-color: #818285; */
+}
+
+.relatedsearch {
+    box-shadow: inset 0 0 3em rgba(0, 0, 0, 0.1);
+    /* box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3); */
+}
+
+.bold {
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#footer {
+    width: 80%;
+    margin: auto;
+    /* border-top: 2px solid yellowgreen; */
+}
+
+.parent1 {
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 2%;
+}
+
+.parent1>.child {
+    display: grid;
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: inline-table;
+}
+
+.parent2 {
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.parent2>.child2 {
+    display: grid;
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 95%;
+    margin: auto;
+}
+
+
+/* discription */
