@@ -1,0 +1,47 @@
+.checkout-btn {
+    background: linear-gradient(180deg, #fee77c 0, #f2ca76 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FEE77C",endColorstr="#F2CA76",GradientType=0);
+    border-radius: 5px;
+    float: right;
+    box-shadow: 3px 2px 5px #ccc;
+    padding: 13px 27px;
+    font: 400 19px Roboto Slab, serif;
+    color: #555;
+    border: none;
+}
+
+
+.body{
+    margin-top: 0; 
+    background-color: rgb(243, 243, 243)
+}
+
+#header{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    background-color: white
+}
+
+.sec-one{
+    align-self: end; 
+    width: 30%;
+}
+
+.body_ul{
+    list-style: none; 
+    display: flex; 
+    justify-content: space-around; 
+    margin: auto; 
+    color: rgb(97, 91, 91)
+}
+
+.sec-two{
+    margin-top: 25px;
+}
+
+.sec-two-firstdiv{
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: nowrap;
+}
