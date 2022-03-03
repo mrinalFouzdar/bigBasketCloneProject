@@ -24,7 +24,7 @@ let slide_show1=()=>{
             i=0
         }
         img.src=slide1_img[i];
-        console.log(i)
+        // console.log(i)
         i++
     }, 4000)
 }
@@ -47,20 +47,6 @@ function plusSlides(position){
 
 
 
-
-// 1> sign ing function.....
-
-let sign_in_box = document.getElementById("sign_in_box")
-
-let signin = () => {
-    sign_in_box.style.display = "flex"
-}
-
-let cut_page=()=>{
-    sign_in_box.style.display="none"
-}
-
-
 // big_save slide show
 
 let y
@@ -78,7 +64,7 @@ let big_save_show1=()=>{
             j=0
         }
         big_save_img.src=big_save_arr[j];
-        console.log(j)
+        // console.log(j)
         j++
     },3800)
 }
@@ -116,7 +102,7 @@ let third_slid_show=()=>{
             k=0
         }
         third_div_img.src=third_arr[k];
-        console.log(k)
+        // console.log(k)
         k++
     },3800)
 }
@@ -158,7 +144,7 @@ let last_slid_show=()=>{
             l=0
         }
         last_slid_div_img.src=last_arr[l];
-        console.log(l)
+        // console.log(l)
         l++
     },3800)
 }
@@ -177,4 +163,50 @@ function last_click_Slides(positio){
 
     last_slid_show()
 
+}
+
+
+// 1> sign ing function.....
+
+let sign_in_box = document.getElementById("sign_in_box")
+
+let signin = () => {
+    sign_in_box.style.display = "flex"
+}
+
+let cut_page=()=>{
+    sign_in_box.style.display="none"
+}
+
+let user_data=localStorage.getItem("user_data")
+if(user_data==null){
+    localStorage.setItem("user_data",JSON.stringify([]))
+}
+
+let data_submit=()=>{
+    let number=document.getElementById("number_email").value;
+    let name= document.getElementById("name").value;
+
+    if(name!=""){
+    let obj={
+        number:number,
+        name:name,
+    }
+
+    user_data=JSON.parse(localStorage.getItem("user_data"))
+    user_data.push(obj)
+    // console.log(user_data[user_data.length-1].name)
+    let show_name= document.getElementById("show_name")
+    show_name.textContent=`Hello  ${user_data[user_data.length-1].name}`
+    localStorage.setItem("user_data",JSON.stringify(user_data))
+    let sign_none= document.querySelector(".signin")
+    // console.log(sign_none)
+    sign_none.style.display="none"
+    cut_page()
+
+  }else{
+      alert("Invalid Information")
+      cut_page()
+
+  }
 }
