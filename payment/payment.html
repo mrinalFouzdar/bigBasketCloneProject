@@ -5,8 +5,199 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css"/>
 </head>
-<body>
-    
+<body style="background-color:rgb(255,255,255);">
+
+    <div id="navbar">
+        <div id="logo"><img src="https://www.bigbasket.com/static/v2489/common/img/bb_logo.png"/></div>
+        <div id="num">1860 123 1000</div>
+    </div>
+
+    <div id="main">
+        <h1><img id="location" src="https://cdn-icons-png.flaticon.com/128/446/446075.png"/> Delivery Address</h1>
+        <div id="submain">
+            <div id="personal">
+                <h1>Personal Details</h1>
+                <div class="name" id="address1">
+                    
+                        <div id="first">
+                            <label>Enter first name</label>
+                            <input type="text" />
+                        </div>
+            
+                        <div id="first">
+                            <label>Enter last name</label>
+                            <input type="text" />
+                        </div>
+                    
+                        <div id="first">
+                            <label>Enter contact number</label>
+                            <input type="text" />
+                        </div>
+                   
+                
+                </div>
+
+            </div>
+            
+
+
+            <div id="personal">
+                <h1>Address Details</h1>
+                <div class="name" id="address2">
+            
+            
+                        <div id="first">
+                            <label>House No</label>
+                            <input type="text" />
+                        </div>
+                    
+                        <div id="first">
+                            <label>Enter apartment name</label>
+                            <input type="text" />
+                        </div>
+
+                        
+                </div>
+
+            
+              
+                <div class="name" id="address3">
+           
+                        <div id="first">
+                            <label>Enter street details</label>
+                            <input type="text" />
+                        </div>
+                    
+                        <div id="first">
+                            <label>Enter landmark for easy reach out</label>
+                            <input type="text" />
+                        </div>
+
+                        
+                </div>
+                <div class="name" id="address4">
+                    
+                    <div id="first">
+                        <label>Enter city name</label>
+                        <input type="text" />
+                    </div>
+        
+                    <div id="first">
+                        <label>Area details</label>
+                        <input type="text" />
+                    </div>
+                
+                    <div id="first">
+                        <label>Enter Pincode</label>
+                        <input type="text" />
+                    </div>
+
+                    
+                </div>
+                <div class="name" id="address4">
+                    
+                    <div id="first">
+                        <label>Choose nick name for this address</label>
+
+                       <div>
+
+                       <button  id ="b1" class="butn">HOME</button>
+                         <button  id ="b2" class="butn">OFFICE</button>
+                        <button  id ="b3" class="butn" >OTHER</button>
+                        </div>
+                        <div id="inp"></div>
+                        <button id="butn1">ADD ADDRESS</button>
+                        
+                       
+                    </div>
+                    
+                </div>  
+
+
+            </div>
+
+           
+
+          
+        </div>
+    </div>
 </body>
 </html>
+
+
+
+<script>
+var btn2= document.getElementById("b1");
+var btn3= document.getElementById("b2");
+var btn4= document.getElementById("b3");
+
+var btn=document.getElementById("butn1");
+
+var ip=document.getElementsByTagName("input");
+
+function ipe(){
+    if(ip.textContent=""){
+        window.alert("not to display")
+    }
+
+}
+
+function changecolor2(){
+    btn2.style.color="green";
+    btn2.style.borderColor="green";
+    btn3.style.color="gray";
+    btn3.style.borderColor="white";
+    btn4.style.color="gray";
+    btn4.style.borderColor="white";
+    
+    
+    
+}
+function changecolor3(){
+    btn3.style.color="green";
+    btn3.style.borderColor="green";
+    btn2.style.color="gray";
+    btn2.style.borderColor="white";
+    btn4.style.color="gray";
+    btn4.style.borderColor="white";
+    
+  
+   
+}
+function changecolor4(){
+    btn4.style.color="green";
+    btn4.style.borderColor="green";
+    btn2.style.color="gray";
+    btn2.style.borderColor="white";
+    btn3.style.color="gray";
+    btn3.style.borderColor="white";
+
+    var div1 = document.createElement("input");
+    div1.setAttribute("id","dv");
+
+    var inp=document.getElementById("inp");
+
+    inp.append(div1)
+
+}
+
+
+
+
+
+function change(){
+    btn.style.backgroundColor="black";
+}
+function againchange(){
+    btn.style.backgroundColor="grey"
+}
+
+btn2.addEventListener('click',changecolor2)
+btn3.addEventListener('click',changecolor3)
+btn4.addEventListener('click',changecolor4)
+btn.addEventListener('mouseover',change)
+btn.addEventListener('mouseleave',againchange)
+btn.addEventListener('click',ipe)
+</script>

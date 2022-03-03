@@ -1,0 +1,122 @@
+
+#navbar{
+    border:1px solid rgb(150,151,150);
+    height: 100px;
+display: flex;
+
+color: rgb(150,151,150);
+}
+#navbar img{
+    margin: 20px;
+    padding:0 50px;
+}
+#num{
+align-self:center;
+text-align: end; 
+padding-left: 850px;
+font-weight: bolder;
+font-family: Arial;
+}
+
+#main{
+    width: 800px;
+    height: 580px;
+    border: 1px solid rgb(150,151,150);
+    margin-top: 20px;
+    font-family:arial;
+    padding: 15px;
+    margin-left: 75px;
+ 
+}
+#main h1{
+    color:rgb(70, 70, 70);
+    font-size: 15px;
+    font-weight:bold;
+    
+}
+#location{
+    width: 20px;
+}
+
+#submain{ 
+    
+    padding:10px;
+    background-color:rgb(244,244,245);
+    margin:auto;
+    height: 80%; 
+    margin-top: 40px; 
+}
+#personal h1{
+    font-weight: lighter;
+}
+#personal{
+border:1px solid rgb(244,244,245);
+}
+.name{
+    display: flex;
+flex-direction: row;
+padding-bottom: 20px;
+
+}
+.name > div{
+    margin:0 6px;
+    border: 1px solid rgb(244,244,245);
+}
+#first{
+    display:flex;
+    flex-direction: column;
+}
+
+#address1 div:nth-last-of-type(1){
+    flex-grow: 3;
+}
+#first label{
+    font-size: 13px;
+    color:rgb(146, 145, 145);
+    margin-bottom: 5px;
+}
+#first input{
+    height:25px;
+    border:1px solid white;
+   
+}
+#address2 div:nth-last-of-type(1){
+    flex-grow: 2;
+}
+#address3 div{
+   flex-basis: 100%;
+}
+#address4 div:nth-last-of-type(2){
+    flex-grow:2;
+}
+.butn{
+    background-color: white;
+    height: 25px;
+    width: 60px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    border:1px solid white;
+    color:gray;
+}
+#butn1{
+    height: 30px;
+    width: 120px;
+    background-color: grey;
+    border:1px solid grey;
+    color:white;
+}
+
+#btn{
+    width: 20px; 
+    height: 20px; 
+    border: 1px solid red;
+}
+
+#dv{
+    border: 1px solid blue;
+    width: 200px; 
+    height:20px;
+
+
+}
