@@ -4,172 +4,189 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="https://kit.fontawesome.com/61f224e9b1.js" crossorigin="anonymous"></script>
+		<!-- <script src="https://kit.fontawesome.com/61f224e9b1.js" crossorigin="anonymous"></script> -->
 		<title>Document</title>
-        <link rel="stylesheet" href="newcheckout.css">
+        <link rel="stylesheet" href="checkout.css">
+		<script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"  ></script>
 	</head>
 
 	<style>
 	
 	</style>
-	<body class="body">
-		<div id="header">
-			<section class="sec-one">
-				<ul class="body_ul">
-					<li>1860 123 1000</li>
-					<li>56004, Bangalore</li>
-					<li>Azhar</li>
-				</ul>
-			</section>
-
-			<section class="sec-two">
-				<div class="sec-two-firstdiv" >
-					<div style="width: 30%; margin: auto">
-						<img src="./bb2.png" alt="" srcset="" width="55%" />
+	<body >
+		<header id="header">
+			<div id="header1">
+				<div><i class="fa fa-phone" style="font-size: 20px;"></i>1860 123 1000</div>
+				<div id="location_main_div">
+					<i class="material-icons" style="font-size: 17px;">place</i>
+					<select name="location_selcet" id="select">
+						<option value="">560004,bangalore</option>
+						<option value="">KOLKATA</option>
+						<option value="">DELHI</option>
+						<option value="">PUNE</option>
+					</select>
+	
+				</div>
+				<!-- <div> <i class="material-icons" style="font-size: 17px;">place</i>&nbsp;560004,Bangalore</div> -->
+				<div class="signin" onclick="signin()">
+					<i class="material-icons" style="font-size: 17px;">person</i>&nbsp; Login/Sign In</div>
+				<div id="show_name"></div>
+	
+	
+				<div id="sign_in_box">
+	
+					<span onclick="cut_page()">X</span>
+					<input type="text" id="number_email" placeholder="Email/Number">
+					<input type="text" name="" id="name" placeholder="Name">
+					<button onclick="data_submit()">Submit</button>
+	
+				</div>
+	
+			</div>
+	
+			<div id="header2">
+				<div id="logoheader"><img src="../homePage/logoo.png" alt=""></div>
+				<div id="searchitem">
+					<div><input type="text" name="" id="" class="searchinput" placeholder="Search for products..."></div>
+					<div class="searchicon"> <i class="material-icons" style="font-size: 23px;">search</i></div>
+				</div>
+				<div id="cartheader">
+					<div id="cartimg"><img src="../homePage/basket.png" alt=""></div>
+					<div id="cartqunt" onclick="cartpage()">
+						<samp>My Basket</samp>
+						<p style="margin: 0px;"><span id="cartnum">0</span>&nbsp;Item</p>
 					</div>
-
-					<div style="width: 70%; margin: auto">
-						<input type="text" style="width: 85%; padding: 8px; outline: none" />
-						<button style="padding: 10px; background-color: #84c225; border: none; color: white"><i class="fa-solid fa-magnifying-glass"></i></button>
-					</div>
-
-					<div style="width: 30%; background-color: rgb(241, 237, 237)">
-						<div style="display: flex; justify-content: end; align-items: center">
-							<i class="fa-solid fa-basket-shopping" style="color: red; width: 17%; font-size: 37px"></i>
-
-							<div>
-								<p>My Basket</p>
-								<p>3 items</p>
+				</div>
+			</div>
+	
+			
+			<div id="categorypart">
+				<div class="categorypart1">
+					<!-- dropdown -->
+					<div class="category">
+						<p>SHOP BY CATEGORY</p>
+						<div class="categoryhover">
+	
+	
+							<!-- left -->
+	
+	
+							<div class="categoryhoverleft">
+								<div class="category-hover-div-left-options">
+									<a href="../product/product.html">   Fruits & Vegetables </a>
+								</div>
+								<div class="category-hover-div-left-options">
+									Foodgrains, Oil & Masala
+								</div>
+								<div class="category-hover-div-left-options">
+									Bakery Cakes & Dairy
+								</div>
+								<div class="category-hover-div-left-options">Beverages</div>
+								<div class="category-hover-div-left-options">
+									Snacks & Branded Foods
+								</div>
+								<div class="category-hover-div-left-options">Beauty & Hygiene</div>
+								<div class="category-hover-div-left-options">
+									Cleaning & Household
+								</div>
+								<div class="category-hover-div-left-options">
+									Kichen, Garden 7 Pets
+								</div>
+								<div class="category-hover-div-left-options">
+									Eggs , Meats & Fish
+								</div>
+								<div class="category-hover-div-left-options">
+									Gourmet & orld Food
+								</div>
+								<div class="category-hover-div-left-options">Baby Care</div>
+								<div class="category-hover-div-left-options">View All</div>
+							</div>
+	
+	
+	
+							<!-- right -->
+	
+	
+							<div class="categoryhoverright">
+								<a href="../product/product.html"> Vegetables</a>
+								<a href="../product/product.html">Herbs & Seasonings</a>
+								<a href="../product/product.html">Fresh Fruits</a>
+								<a href="../product/product.html">Organic Fruits & Vegetables</a>
+								<a href="../product/product.html">Cuts & Sprouts</a>
+								<a href="../product/product.html">Exotic Fruits & Veggies</a>
+								<a href="../product/product.html">Flower Bouquets, Bunches</a>
+	
+							</div>
+							<div class="categoryhoverright2">
+								<a href="../product/product.html">Potato,Onion&Tomato</a>
+								<a href="../product/product.html">Cucumber & Capsicum</a>
+								<a href="../product/product.html">Leafy Vegatbles</a>
+								<a href="../product/product.html">Root vegetables</a>
+								<a href="../product/product.html">Beans,Brinjals & Okra</a>
+								<a href="../product/product.html">Cabbage &cauliflower</a>
+								<a href="../product/product.html">Gourd, pumpkin, Drumstick</a>
+	
+							</div>
+							<div class="categoryhoverright3">
+								<!-- <h6>popular search</h6> -->
+								<a href="../product/product.html">Vegetables</a>
+								<a href="../product/product.html">Onion</a>
+								<a href="../product/product.html">Tmoto</a>
+								<a href="../product/product.html">Potato</a>
+								<a href="../product/product.html">Vegetable</a>
+								<a href="../product/product.html">Carrort</a>
+								<!-- <a href="">Flower Bouquets, Bunches</a> -->
+	
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-
-			<div class="sec-three" style="padding: 10px; display: flex; justify-content: space-around; width: 35%">
-				<div style="padding: 10px; background-color: #84c225; margin: 0"><span>SHOP BY CATEGORY</span> <i class="fa-solid fa-caret-down"></i></div>
-
-				<div style="padding: 10px; margin: auto"><i class="fa-solid fa-tag" style="color: red; font-size: 20px"></i> <span>Offers</span></div>
-
-				<div style="padding: 10px"><i class="fa-solid fa-house-chimney" style="color: #84c225; font-size: 20px"></i> <span>BB Speciality</span></div>
-			</div>
-		</div>
-
-		<div id="main" style="background-color: white; margin-top: 25px">
-			<div style="padding: 5px">
-				<span style="font-size: 25px">Your Basket (03 items)</span>
-				<p style="border-bottom: 1px solid black"></p>
-			</div>
-
-			<div>
-				<button style="padding: 6px; border: 2px solid orange; color: rgb(66, 64, 64)"><i class="fa-solid fa-p" style="background-color: rgb(248, 94, 23); padding: 3px; border-radius: 25%; margin: auto; color: white"></i> VIEW AVAILABLE PROMOS</button>
-			</div>
-
-			<div>
-				<ul style="list-style: none; display: flex; flex-direction: row; justify-content: flex-start">
-					<li style="width: 30px; background-color: rgb(68, 64, 64); padding: 15px; text-align: center; color: white">&nbsp;</li>
-					<li style="width: 412px; background-color: rgb(68, 64, 64); padding: 15px; text-align: center; color: white">ITEM DESCRIPTION</li>
-					<li style="width: 132px; background-color: rgb(68, 64, 64); padding: 15px; text-align: center; color: white">UNIT PRICE</li>
-					<li style="width: 132px; background-color: rgb(68, 64, 64); padding: 15px; text-align: center; color: white">QUANTITY</li>
-					<li style="width: 132px; background-color: rgb(68, 64, 64); padding: 15px; text-align: center; color: white">SUBTOTAL</li>
-					<li style="width: 132px; background-color: #84c225; padding: 15px; text-align: center">SAVINGS</li>
-				</ul>
-			</div>
-
-			<div
-				style="
-					background-color: rgb(185, 184, 184);
-					padding: 1px;
-					width: 90%;
-
-					margin-left: 41px;
-					margin-top: -16px;
-				"
-			>
-				<p style="color: white">Fruits & Vegetables 03 items: Rs. 87.00</p>
-			</div>
-
-			<div>
-				<ul style="list-style: none; display: flex; flex-direction: row; justify-content: flex-start; border-bottom: 1px solid black; width: 90%; margin-left: 35px">
-					<li style="width: 30px; text-align: center; padding: 15px">&nbsp;</li>
-					<li style="width: 412px; text-align: center; padding: 15px">Fresho Capsicum -Green 500gm</li>
-					<li style="width: 132px; text-align: center; padding: 15px">Rs. 42.00</li>
-					<li style="width: 132px; text-align: center; padding: 15px">
-						<button><i class="fa-solid fa-plus"></i></button> <input style="width: 15%" type="text" name="" id="" /> <button><i class="fa-solid fa-minus"></i></button>
-					</li>
-					<li style="width: 132px; text-align: center; padding: 15px">Rs. 42.00 <i class="fa-solid fa-xmark"></i></li>
-					<li style="width: 132px; text-align: center; padding: 15px">Rs.10.50</li>
-				</ul>
-			</div>
-
-			<div>
-				<ul style="list-style: none; display: flex; flex-direction: row; justify-content: flex-start; border-bottom: 1px solid black; width: 90%; margin-left: 35px">
-					<li style="width: 30px; text-align: center; padding: 15px">&nbsp;</li>
-					<li style="width: 412px; text-align: center; padding: 15px">FRESHO Carrot - Orange 500 g</li>
-					<li style="width: 132px; text-align: center; padding: 15px">Rs. 32.00</li>
-					<li style="width: 132px; text-align: center; padding: 15px">
-						<button><i class="fa-solid fa-plus"></i></button> <input style="width: 15%" type="text" name="" id="" /> <button><i class="fa-solid fa-minus"></i></button>
-					</li>
-					<li style="width: 132px; text-align: center; padding: 15px">Rs. 32.00 <i class="fa-solid fa-xmark"></i></li>
-					<li style="width: 132px; text-align: center; padding: 15px">Rs.8</li>
-				</ul>
-			</div>
-
-			<div>
-				<ul style="list-style: none; display: flex; flex-direction: row; justify-content: flex-start; border-bottom: 1px solid black; width: 90%; margin-left: 35px">
-					<li style="width: 30px; text-align: center; padding: 15px">&nbsp;</li>
-					<li style="width: 412px; text-align: center; padding: 15px">Cauliflower 1 pc</li>
-					<li style="width: 132px; text-align: center; padding: 15px">Rs. 13.00</li>
-					<li style="width: 132px; text-align: center; padding: 15px">
-						<button><i class="fa-solid fa-plus"></i></button> <input style="width: 15%" type="text" name="" id="" /> <button><i class="fa-solid fa-minus"></i></button>
-					</li>
-					<li style="width: 132px; text-align: center; padding: 15px">Rs. 13.00 <i class="fa-solid fa-xmark"></i></li>
-					<li style="width: 132px; text-align: center; padding: 15px">Rs.3.50</li>
-				</ul>
-			</div>
-
-			<div style="display: flex; justify-content: space-between">
-				<div>
-					<button style="padding: 10px; border: 1px solid #84c225; margin-left: 41px"><i class="fa-solid fa-basket-shopping" style="color: gray; font-size: 17px"></i> EMPTY BASKET</button>
-				</div>
-
-				<div style="border: 1px solid black; padding: 25px; width: 45%">
-					<div style="display: flex; justify-content: space-between">
-						<div style="display: flex; justify-content: space-between; width: 75%; border-right: 1px solid black; padding: 5px">
-							<ul style="list-style: none; width: 100%">
-								<li style="display: flex; justify-content: space-between; padding-bottom: 5px">
-									<div>Subtotal</div>
-									<div>Rs.87.00</div>
-								</li>
-
-								<li style="border-top: 1px solid black; display: flex; justify-content: space-between">
-									<h2>TOTAL</h2>
-
-									<h2>Rs. 87.00</h2>
-								</li>
-							</ul>
-						</div>
-
-						<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 25%; color: red">
-							<i class="fa-solid fa-piggy-bank"></i>
-							<span>You saved! </span>
-							<span> Rs.27.75</span>
-						</div>
+					<div class="tag">
+						<p><img src="./offer.svg" alt="" srcset="">OFFERS</p>
 					</div>
-
-					<div style="margin-top: 10px; border-bottom: 1px solid black">* For this order: Accepted food coupon is Rs. 87.00</div>
-
-					<div style="margin-top: 15px; width: 100%; float: right; margin-bottom: 15px">
-						<button class="checkout-btn">CHECKOUT <i class="fa-solid fa-circle-arrow-right"></i></button>
+					<div class="tag">
+						<p><img src="./bike.svg" alt="" srcset=""> BB EXPRESS</p>
 					</div>
-
-					<div>** Actual delivery charges computed at checkout time</div>
+					<div class="tag">
+						<p><img src="./home.svg" alt="" srcset="">BB SPECIALTY</p>
+					</div>
 				</div>
+	
 			</div>
+	
+		</header>
+
+		<!-- down maing cart page -->
+
+		<div id="container">
+			<div id="item_has">
+				<h4>Your Basket (<span>0</span>) </h4>
+			</div>
+
+
+			<table>
+				<thead>
+					<tr>
+						<th>ITEM DESCRIPTION</th>
+						<th>UNIT PRICE</th>
+						<th>QUANTITY</th>
+						<th>SUBTOTAL</th>
+						<th>REMOVE ITEM</th>
+					</tr>
+				</thead>
+
+				<tbody id="tbdy">
+
+				</tbody>
+			</table>
+
+			<button id="empty_cart" onclick="empty_baskt()">
+				<i class="fa-solid fa-basket-shopping"></i>
+				EMPTY BASKET
+			</button>
 		</div>
 
-		<div id="footer">
-			<!-- FOOTER -->
-		</div>
+
+		
 	</body>
 </html>
+<script src="./checkout.js"></script>
