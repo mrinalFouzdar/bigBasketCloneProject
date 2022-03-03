@@ -72,7 +72,7 @@
                         </div>
 
                         <div>
-                            <div id="pay">
+                            <div id="pay" onclick="alt()">
                                Place order & Pay
                             </div>
                         </div>
@@ -183,6 +183,9 @@
   sub2.addEventListener('click',hide);
   sub1.addEventListener('click',show);
   
+  function alt(){
+      alert("Order Placed Successfully");
+  }
   function color(){
       sub1.style.borderBottomColor="white";
       sub2.style.borderBottomColor="rgb(175, 175, 184)";
