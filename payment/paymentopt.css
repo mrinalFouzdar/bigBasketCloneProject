@@ -1,0 +1,155 @@
+#main{
+    border: 1px solid rgb(175, 175, 184);
+    width: 62.5%;
+    height: 100%;
+    margin-left: 6%;
+    font-family: arial;
+}
+h1{
+    font-size: 20px;
+    color:rgb(103,102,103);
+}
+#main > div{
+  
+  
+    margin:2% 0;
+}
+#submain{
+    border-top:1px solid rgb(175, 175, 184);
+    border-bottom:1px solid rgb(175, 175, 184);
+    background-color: rgb(246,246,247);
+    display: flex;
+    padding-left: 1%;
+    padding-top:2%;
+    padding-right:1%;
+    height: 1%;
+}
+#submain  > div{
+  
+    width: 48%;
+   
+    background-color: white;
+  margin:0 1%;
+  padding:2%;
+  border-top:1px solid rgb(175, 175, 184);
+  border-left:1px solid rgb(175, 175, 184);
+  border-right:1px solid rgb(175, 175, 184);
+}
+#submain h1{
+    font-size:100%;
+    font-weight: 500;
+}
+#submain h2{
+    font-size: 90%;
+    color:rgb(175, 175, 184);
+    font-weight: 500;
+}
+#submain h1,h2{
+    line-height: 70%;
+}
+#submain2{
+   padding:0 2%;
+    display: flex;
+  
+}
+
+#options{
+    width: 20%;
+  
+    border-left: 1px solid rgb(175, 175, 184);
+    border-top: 1px solid rgb(175, 175, 184);
+    
+}
+#options  div{
+    border-bottom: 1px solid rgb(175, 175, 184);
+    font-size: 80%;
+    padding:10%;
+    
+}
+#payment{
+    background-color:rgb(246,246,247);;
+    width: 80%;
+    border: 1px solid rgb(175, 175, 184);
+    padding:2%;
+   
+}
+#payment > div{   
+    border: 1px solid rgb(175, 175, 184);
+}
+#tag{
+    display: flex;
+    flex-direction: row;
+  
+}
+#radio{
+    border:1px solid black;
+    width: 4%;
+  
+}
+#radio div{
+   
+}
+#card{
+    background-color: white;
+}
+#details{
+  
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 30%;
+}
+#details > div{
+   
+    margin-bottom: 5%;
+}
+#code{
+    display: flex;
+    flex-direction: row;
+}
+#code > div{
+    padding-right:7%;
+    
+}
+#code label{
+    margin-bottom: 1%;
+}
+#first{
+    display: flex;
+    flex-direction: column;
+}
+#first > div{
+    margin-bottom: ;
+}
+#first label{
+    font-size: 70%;
+ 
+}
+input{
+    padding:1%;
+    font-size: 75%;
+    border-bottom:1px solid rgb(175, 175, 184);
+    border-top:1px solid white;
+    border-left:1px solid white;
+    border-right:1px solid white;
+    margin-top: 1%;
+}
+#check{
+    display: flex;
+    flex-direction: row;
+    font-size: 70%;
+   
+}
+#check label{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+#pay{
+    margin-left: 1%;
+    
+    width: 50%;
+    text-align: center;
+    padding:3%;
+    color:white;
+    background-color:rgb(133,195,37);
+}
+
