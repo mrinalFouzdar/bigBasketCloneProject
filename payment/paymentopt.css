@@ -1,54 +1,82 @@
 #main{
     border: 1px solid rgb(175, 175, 184);
     width: 62.5%;
-    height: 100%;
+    
     margin-left: 6%;
     font-family: arial;
 }
 h1{
-    font-size: 20px;
+    margin-top: 1%;
+    font-size: 17px;
     color:rgb(103,102,103);
 }
-#main > div{
-  
-  
-    margin:2% 0;
+#pment{
+    padding-left:2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    height: 10%;
 }
+img{
+    margin-top: 1%;
+    width:2%;
+    height: 2%;
+    margin-right: 1%;
+}
+
 #submain{
     border-top:1px solid rgb(175, 175, 184);
-    border-bottom:1px solid rgb(175, 175, 184);
+    border-bottom:1px solid white;
     background-color: rgb(246,246,247);
     display: flex;
-    padding-left: 1%;
+    /* padding-left: 1%; */
     padding-top:2%;
-    padding-right:1%;
+    /* padding-right:1%; */
     height: 1%;
+    margin-bottom:2%;
 }
-#submain  > div{
+#submain  > #sub1,#sub2{
   
     width: 48%;
    
     background-color: white;
-  margin:0 1%;
-  padding:2%;
+  /* margin:0 1%; */
+  padding:1.5% 2%;
   border-top:1px solid rgb(175, 175, 184);
   border-left:1px solid rgb(175, 175, 184);
   border-right:1px solid rgb(175, 175, 184);
+  border-bottom:1px solid rgb(175, 175, 184);
+}
+#sub2{
+border-bottom:1px solid white;
+}
+#sub1{
+    background-color: rgb(252,253,253);
+}
+ 
+#submain #short{
+    width:2%;
+    border-bottom: 1px solid rgb(175, 175, 184);
 }
 #submain h1{
-    font-size:100%;
-    font-weight: 500;
+    font-size:90%;
+    font-weight: 510;
 }
 #submain h2{
-    font-size: 90%;
+    font-size: 80%;
     color:rgb(175, 175, 184);
     font-weight: 500;
 }
 #submain h1,h2{
-    line-height: 70%;
+    line-height: 75%;
 }
-#submain2{
+
+
+
+ #submain2{
    padding:0 2%;
+   padding-bottom: 2%;
     display: flex;
   
 }
@@ -63,39 +91,45 @@ h1{
 #options  div{
     border-bottom: 1px solid rgb(175, 175, 184);
     font-size: 80%;
-    padding:10%;
-    
+    padding:10%;  
+}
+#one{
+    background-color: rgb(246,246,247);
 }
 #payment{
-    background-color:rgb(246,246,247);;
+    background-color:rgb(246,246,247);
     width: 80%;
     border: 1px solid rgb(175, 175, 184);
-    padding:2%;
+    padding:2% 3%;
    
 }
 #payment > div{   
     border: 1px solid rgb(175, 175, 184);
 }
-#tag{
-    display: flex;
-    flex-direction: row;
-  
-}
-#radio{
-    border:1px solid black;
-    width: 4%;
-  
-}
-#radio div{
-   
-}
+
 #card{
     background-color: white;
+}
+#card img{
+   width: 4%;
+   height: 4%;
+   margin:3%;
+   
+}
+#card h1{
+    color:black;
+    margin:4% 0;
+    font-size: 80%;
+
+}
+#radio {
+    display: flex;
+    flex-direction: row;
 }
 #details{
   
     margin-top: 2%;
-    margin-left: 4%;
+    margin-left: 11%;
     margin-right: 30%;
 }
 #details > div{
@@ -111,17 +145,24 @@ h1{
     
 }
 #code label{
-    margin-bottom: 1%;
+    margin-bottom: 2%;
+}
+#code input{
+    padding-bottom: 1%;
+    padding-top: 1%;
+    
 }
 #first{
     display: flex;
     flex-direction: column;
 }
 #first > div{
-    margin-bottom: ;
+  
 }
 #first label{
-    font-size: 70%;
+    font-size:70%;
+    margin-left: 1%;
+   
  
 }
 input{
@@ -132,6 +173,7 @@ input{
     border-left:1px solid white;
     border-right:1px solid white;
     margin-top: 1%;
+    margin-bottom: 4%;
 }
 #check{
     display: flex;
@@ -142,6 +184,7 @@ input{
 #check label{
     margin-top: 1%;
     margin-left: 1%;
+   
 }
 #pay{
     margin-left: 1%;
@@ -150,6 +193,73 @@ input{
     text-align: center;
     padding:3%;
     color:white;
-    background-color:rgb(133,195,37);
+    background-color:rgb(218,237,190);
+}
+#la{
+
+width: 25%;
+margin-left: 1%;
+
+}
+#la img{
+    width: 17%;
+    height: 50%;
+    
+} 
+
+
+
+#submain3 > div{
+     
+     padding-top:2%;
+     padding-left:2%;
+     padding-right: 2%;
+     padding-bottom: 0%;
+     margin-bottom:1%;
+     margin-left:1%;
+     margin-right:1%;
+     margin-top:0%;
+ 
+}
+#paytm{
+    display: flex;
+    border: 1px solid rgb(175, 175, 184);
+}
+
+#rad{
+    width: 20px;
+    height: 20px;
+    color:red;
+    margin-top: 1.5%;
+}
+#img{
+    width: 3%;
+    margin-left:1.5% ;
+   
+}
+#py{
+    margin-left: 1.5%; 
+    text-align: start;
+    line-height: 1%;
+}
+#py h1{
+    font-size: 80%;
+    font-weight: 400;
+    color: black;
+    
+}
+#py h2{
+    font-size: 73%;
+    color:rgba(6, 138, 6, 0.678);
+    font-weight: 300;
+}
+#offer{
+    display: flex;
+}
+#per{
+    width:2%;
+}
+#offer h2{
+    line-height: 100%;
 }
 
