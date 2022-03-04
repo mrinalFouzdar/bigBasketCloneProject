@@ -361,7 +361,7 @@ function addtocart(ele) {
 }
 
 function cartpage() {
-    window.location.href = "../checkout/checkout.html"
+    window.location.href = "../checkout/checkout1.html"
 }
 
 
