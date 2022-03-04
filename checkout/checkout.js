@@ -3,6 +3,24 @@
 
 let sign_in_box = document.getElementById("sign_in_box")
 
+
+
+
+let user_data_log = JSON.parse(localStorage.getItem("user_data"))
+console.log(user_data_log)
+
+if(user_data_log.length>0){
+    let show_name = document.getElementById("show_name")
+     document.querySelector(".signin").style.display = "none"
+     
+     show_name.textContent = ` ${user_data_log[user_data_log.length-1].name}`
+    //   cart_page()
+}else{
+    localStorage.setItem("user_data", JSON.stringify([]))
+
+}
+
+
 let signin = () => {
     sign_in_box.style.display = "flex"
 }
@@ -11,10 +29,7 @@ let cut_page = () => {
     sign_in_box.style.display = "none"
 }
 
-let user_data = localStorage.getItem("user_data")
-if (user_data == null) {
-    localStorage.setItem("user_data", JSON.stringify([]))
-}
+
 
 let data_submit = () => {
     let number = document.getElementById("number_email").value;
@@ -25,13 +40,14 @@ let data_submit = () => {
             number: number,
             name: name,
         }
+        localStorage.setItem("user_data", JSON.stringify([]))
 
-        user_data = JSON.parse(localStorage.getItem("user_data"))
-        user_data.push(obj)
+        user_data_log = JSON.parse(localStorage.getItem("user_data"))
+        user_data_log.push(obj)
             // console.log(user_data[user_data.length-1].name)
         let show_name = document.getElementById("show_name")
-        show_name.textContent = ` ${user_data[user_data.length-1].name}`
-        localStorage.setItem("user_data", JSON.stringify(user_data))
+        show_name.textContent = ` ${user_data_log[user_data_log.length-1].name}`
+        localStorage.setItem("user_data", JSON.stringify(user_data_log))
         let sign_none = document.querySelector(".signin")
             // console.log(sign_none)
         sign_none.style.display = "none"
@@ -119,7 +135,11 @@ let displaycart=()=>{
 
 
         c5.innerText=`X`
-        c5.style.cursor="alias"
+        c5.style.cursor="pointer"
+        // c5.style.cursor.color="red"
+        c5.className="c5"
+
+
 
         c5.addEventListener("click",function(){
             delete_ele(idx)
@@ -132,8 +152,17 @@ let displaycart=()=>{
     })
 
 }
-displaycart()
 
+
+displaycart()
+let total=()=>{
+    let total= cartArr.reduce(function(acc,ele){
+        return acc +(Number(ele.mrp)*Number(ele.quantity))
+    },0)
+    document.getElementById("total").textContent=total.toFixed(0)
+    document.getElementById("sub_total").textContent=total.toFixed(0)
+}
+total()
 let negative=(idx) =>{
     if(cartArr[idx].quantity!=0){
         cartArr[idx].quantity--;
@@ -143,12 +172,14 @@ let negative=(idx) =>{
     }
 
     displaycart(cartArr)
+    total()
 }
 
 let increase=(idx) =>{
     cartArr[idx].quantity++;
     localStorage.setItem("cartitems",JSON.stringify(cartArr))
     displaycart(cartArr)
+    total()
 }
 
 
@@ -157,5 +188,36 @@ let delete_ele=(idx)=>{
     localStorage.setItem("cartitems",JSON.stringify(cartArr))
     cartnum.textContent=cartArr.length;
     displaycart(cartArr)
+    total()
 }
 
+let check_out=()=>{
+    console.log(cartArr[0].quantity)
+
+    if(cartArr.length>0){
+        if(Number(cartArr[0].quantity) > 0){
+            window.location.href="../payment/payment.html"
+      
+          }else{
+            alert("Quentity Empty")
+
+          }
+    }
+    else{
+        alert("Quentity Empty")
+    }
+}
+
+let continut_direct=()=>{
+    window.location.href="../product/product.html"
+}
+
+
+let empty_basket=()=>{
+    cartArr=[]
+    let tbdy=document.getElementById("tbdy");
+    tbdy.innerHTML="";
+    localStorage.setItem("cartitems",JSON.stringify(cartArr))
+    document.getElementById("cartnum").innerHTML=cartArr.length;
+    total()
+}

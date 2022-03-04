@@ -1,5 +1,5 @@
 // <2> slide show 1 function
-
+console.log(1)
 let x;
 let slide1 = document.getElementById("slide1")
 let slide1_img = ['https://www.bigbasket.com/media/uploads/banner_images/HP_EMF_M_Weekdayblore_460_230222.jpeg',
@@ -181,8 +181,8 @@ let cut_page = () => {
     sign_in_box.style.display = "none"
 }
 
-let user_data = localStorage.getItem("user_data")
-if (user_data == null) {
+let user_data_log = localStorage.getItem("user_data")
+if (user_data_log == null) {
     localStorage.setItem("user_data", JSON.stringify([]))
 }
 
@@ -195,13 +195,17 @@ let data_submit = () => {
             number: number,
             name: name,
         }
+        localStorage.setItem("user_data", JSON.stringify([]))
 
-        user_data = JSON.parse(localStorage.getItem("user_data"))
-        user_data.push(obj)
+        user_data_log = JSON.parse(localStorage.getItem("user_data"))
+        // user_data_log=[]
+        user_data_log.push(obj)
+        console.log(user_data_log)
             // console.log(user_data[user_data.length-1].name)
         let show_name = document.getElementById("show_name")
-        show_name.textContent = `Hello  ${user_data[user_data.length-1].name}`
-        localStorage.setItem("user_data", JSON.stringify(user_data))
+        show_name.textContent = `Hello  ${user_data_log[user_data_log.length-1].name}`
+        localStorage.setItem("user_data", JSON.stringify(user_data_log))
+        console.log(user_data_log)
         let sign_none = document.querySelector(".signin")
             // console.log(sign_none)
         sign_none.style.display = "none"
