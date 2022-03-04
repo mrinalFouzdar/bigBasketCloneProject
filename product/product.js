@@ -294,6 +294,56 @@ function displayproduct(productArr) {
 
 }
 
+// login
+
+let sign_in_box = document.getElementById("sign_in_box")
+console.log(sign_in_box)
+
+let signin = () => {
+    sign_in_box.style.display = "flex"
+}
+
+let cut_page = () => {
+    sign_in_box.style.display = "none"
+}
+
+let user_data = localStorage.getItem("user_data")
+if (user_data == null) {
+    localStorage.setItem("user_data", JSON.stringify([]))
+}
+
+let data_submit = () => {
+    let number = document.getElementById("number_email").value;
+    let name = document.getElementById("name").value;
+
+    if (name != "") {
+        let obj = {
+            number: number,
+            name: name,
+        }
+
+        user_data = JSON.parse(localStorage.getItem("user_data"))
+        user_data.push(obj)
+            // console.log(user_data[user_data.length - 1].name)
+        let show_name = document.getElementById("show_name")
+        show_name.textContent = user_data.name
+            // show_name.textContent = `Hello  ${user_data[user_data.length-1].name}`
+        console.log(show_name)
+        localStorage.setItem("user_data", JSON.stringify(user_data))
+        let sign_none = document.querySelector(".signin")
+        console.log(sign_none)
+        sign_none.style.display = "none"
+            // cut_page()
+
+    } else {
+        alert("Invalid Information")
+        cut_page()
+
+    }
+}
+
+
+
 
 // <---------------------filter-------------->
 
