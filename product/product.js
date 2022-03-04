@@ -338,6 +338,8 @@ function pricesort() {
 
 
 
+
+
 function search() {
     var search = document.querySelector("#search").value
     if (search != "") {
