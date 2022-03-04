@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 
 <head>
     <meta charset="UTF-8" />
@@ -174,3 +175,195 @@
 </body>
 
 </html>
+=======
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <script src="https://kit.fontawesome.com/61f224e9b1.js" crossorigin="anonymous"></script> -->
+		<title>Document</title>
+        <link rel="stylesheet" href="checkout.css">
+		<script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"  ></script>
+	</head>
+
+	<style>
+	
+	</style>
+	<body >
+		<header id="header">
+			<div id="header1">
+				<div><i class="fa fa-phone" style="font-size: 20px;"></i>1860 123 1000</div>
+				<div id="location_main_div">
+					<i class="material-icons" style="font-size: 17px;">place</i>
+					<select name="location_selcet" id="select">
+						<option value="">560004,bangalore</option>
+						<option value="">KOLKATA</option>
+						<option value="">DELHI</option>
+						<option value="">PUNE</option>
+					</select>
+	
+				</div>
+				<!-- <div> <i class="material-icons" style="font-size: 17px;">place</i>&nbsp;560004,Bangalore</div> -->
+				<div class="signin" onclick="signin()">
+					<i class="material-icons" style="font-size: 17px;">person</i>&nbsp; Login/Sign In</div>
+				<div id="show_name"></div>
+	
+	
+				<div id="sign_in_box">
+	
+					<span onclick="cut_page()">X</span>
+					<input type="text" id="number_email" placeholder="Email/Number">
+					<input type="text" name="" id="name" placeholder="Name">
+					<button onclick="data_submit()">Submit</button>
+	
+				</div>
+	
+			</div>
+	
+			<div id="header2">
+				<div id="logoheader"><img src="../homePage/logoo.png" alt=""></div>
+				<div id="searchitem">
+					<div><input type="text" name="" id="" class="searchinput" placeholder="Search for products..."></div>
+					<div class="searchicon"> <i class="material-icons" style="font-size: 23px;">search</i></div>
+				</div>
+				<div id="cartheader">
+					<div id="cartimg"><img src="../homePage/basket.png" alt=""></div>
+					<div id="cartqunt" onclick="cartpage()">
+						<samp>My Basket</samp>
+						<p style="margin: 0px;"><span id="cartnum">0</span>&nbsp;Item</p>
+					</div>
+				</div>
+			</div>
+	
+			
+			<div id="categorypart">
+				<div class="categorypart1">
+					<!-- dropdown -->
+					<div class="category">
+						<p>SHOP BY CATEGORY</p>
+						<div class="categoryhover">
+	
+	
+							<!-- left -->
+	
+	
+							<div class="categoryhoverleft">
+								<div class="category-hover-div-left-options">
+									<a href="../product/product.html">   Fruits & Vegetables </a>
+								</div>
+								<div class="category-hover-div-left-options">
+									Foodgrains, Oil & Masala
+								</div>
+								<div class="category-hover-div-left-options">
+									Bakery Cakes & Dairy
+								</div>
+								<div class="category-hover-div-left-options">Beverages</div>
+								<div class="category-hover-div-left-options">
+									Snacks & Branded Foods
+								</div>
+								<div class="category-hover-div-left-options">Beauty & Hygiene</div>
+								<div class="category-hover-div-left-options">
+									Cleaning & Household
+								</div>
+								<div class="category-hover-div-left-options">
+									Kichen, Garden 7 Pets
+								</div>
+								<div class="category-hover-div-left-options">
+									Eggs , Meats & Fish
+								</div>
+								<div class="category-hover-div-left-options">
+									Gourmet & orld Food
+								</div>
+								<div class="category-hover-div-left-options">Baby Care</div>
+								<div class="category-hover-div-left-options">View All</div>
+							</div>
+	
+	
+	
+							<!-- right -->
+	
+	
+							<div class="categoryhoverright">
+								<a href="../product/product.html"> Vegetables</a>
+								<a href="../product/product.html">Herbs & Seasonings</a>
+								<a href="../product/product.html">Fresh Fruits</a>
+								<a href="../product/product.html">Organic Fruits & Vegetables</a>
+								<a href="../product/product.html">Cuts & Sprouts</a>
+								<a href="../product/product.html">Exotic Fruits & Veggies</a>
+								<a href="../product/product.html">Flower Bouquets, Bunches</a>
+	
+							</div>
+							<div class="categoryhoverright2">
+								<a href="../product/product.html">Potato,Onion&Tomato</a>
+								<a href="../product/product.html">Cucumber & Capsicum</a>
+								<a href="../product/product.html">Leafy Vegatbles</a>
+								<a href="../product/product.html">Root vegetables</a>
+								<a href="../product/product.html">Beans,Brinjals & Okra</a>
+								<a href="../product/product.html">Cabbage &cauliflower</a>
+								<a href="../product/product.html">Gourd, pumpkin, Drumstick</a>
+	
+							</div>
+							<div class="categoryhoverright3">
+								<!-- <h6>popular search</h6> -->
+								<a href="../product/product.html">Vegetables</a>
+								<a href="../product/product.html">Onion</a>
+								<a href="../product/product.html">Tmoto</a>
+								<a href="../product/product.html">Potato</a>
+								<a href="../product/product.html">Vegetable</a>
+								<a href="../product/product.html">Carrort</a>
+								<!-- <a href="">Flower Bouquets, Bunches</a> -->
+	
+							</div>
+						</div>
+					</div>
+					<div class="tag">
+						<p><img src="./offer.svg" alt="" srcset="">OFFERS</p>
+					</div>
+					<div class="tag">
+						<p><img src="./bike.svg" alt="" srcset=""> BB EXPRESS</p>
+					</div>
+					<div class="tag">
+						<p><img src="./home.svg" alt="" srcset="">BB SPECIALTY</p>
+					</div>
+				</div>
+	
+			</div>
+	
+		</header>
+
+		<!-- down maing cart page -->
+
+		<div id="container">
+			<div id="item_has">
+				<h4>Your Basket (<span>0</span>) </h4>
+			</div>
+
+
+			<table>
+				<thead>
+					<tr>
+						<th>ITEM DESCRIPTION</th>
+						<th>UNIT PRICE</th>
+						<th>QUANTITY</th>
+						<th>SUBTOTAL</th>
+						<th>REMOVE ITEM</th>
+					</tr>
+				</thead>
+
+				<tbody id="tbdy">
+
+				</tbody>
+			</table>
+
+			<button id="empty_cart" onclick="empty_baskt()">
+				<i class="fa-solid fa-basket-shopping"></i>
+				EMPTY BASKET
+			</button>
+		</div>
+
+
+		
+	</body>
+</html>
+<script src="./checkout.js"></script>
+>>>>>>> 2bfe6eeefa94b93cc0fb204912932bbda6be685c

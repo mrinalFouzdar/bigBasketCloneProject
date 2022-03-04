@@ -20,7 +20,7 @@ font-family: Arial;
 
 #main{
     width: 800px;
-    height: 580px;
+   
     border: 1px solid rgb(150,151,150);
     margin-top: 20px;
     font-family:arial;
@@ -117,6 +117,94 @@ padding-bottom: 20px;
     border: 1px solid blue;
     width: 200px; 
     height:20px;
+}
 
+#gift{
+    width: 35px;
+    height: 30px;
+}
 
+#main1{
+    width: 800px;
+   display: flex;
+    border: 1px solid rgb(150,151,150);
+    margin-top: 20px;
+    font-family:arial;
+    padding: 15px;
+    margin-left: 75px;
+ 
+}
+#main1 h1{
+    color:rgb(185, 184, 184);
+    font-size: 15px;
+    font-weight:bold;   
+}
+
+#mes{
+    margin-left: 500px;
+}
+#mes h1{
+    padding:5px 16px;
+    font-size: 13px;
+    font-weight: 300;
+    color:rgba(63, 62, 62, 0.993);
+    border: 1px solid rgba(63, 62, 62, 0.993) ;
+}
+#main2{
+    width: 800px;
+   display: flex;
+    border: 1px solid rgb(150,151,150);
+    margin-top: 20px;
+    font-family:arial;
+    padding: 15px;
+    margin-left: 75px;
+ 
+}
+#main2 h1{
+    color:rgb(185, 184, 184);
+    font-size: 15px;
+    font-weight:bold;   
+}
+#main2 h2{
+    margin-left: 65px;
+    font-size:13px;
+    color:rgba(185, 184, 184, 0.712);
+}
+
+#mes2{
+    margin-left: 230px;
+}
+#mes2 h1{
+    padding:5px 35px;
+    font-size: 13px;
+    font-weight: 300;
+    color:rgba(63, 62, 62, 0.993);
+    border: 1px solid rgba(63, 62, 62, 0.993) ;
+}
+#gift2{
+    width: 28px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+#gift3{
+    width: 20px;
+    height: 20px;
+    margin-right:5px;
+}
+
+#main3{
+    width: 800px;
+   display: flex;
+    border: 1px solid rgb(150,151,150);
+    margin-top: 20px;
+    font-family:arial;
+    padding: 15px;
+    margin-left: 75px;
+ 
+}
+#main3 h1{
+    color:rgb(185, 184, 184);
+    font-size: 15px;
+    font-weight:bold;   
 }

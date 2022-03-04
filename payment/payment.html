@@ -101,32 +101,43 @@
                     <div id="first">
                         <label>Choose nick name for this address</label>
 
-                       <div>
-
-                       <button  id ="b1" class="butn">HOME</button>
-                         <button  id ="b2" class="butn">OFFICE</button>
-                        <button  id ="b3" class="butn" >OTHER</button>
+                        <div>
+                            <button  id ="b1" class="butn">HOME</button>
+                            <button  id ="b2" class="butn">OFFICE</button>
+                            <button  id ="b3" class="butn" >OTHER</button>
                         </div>
                         <div id="inp"></div>
-                        <button id="butn1">ADD ADDRESS</button>
-                        
-                       
-                    </div>
-                    
+                        <button id="butn1" onclick="nextpage()">ADD ADDRESS</button>
+                                        
+                    </div>              
                 </div>  
-
-
-            </div>
-
-           
-
-          
+            </div>  
         </div>
+    </div>
+
+
+    <div id="main1">
+        <img id="gift" src="https://imgs.search.brave.com/cCbU0Hm2OBvo_S-NmKU3e7Jb3bKdPtYwePqFVgP-DX0/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5B/bjlLalpCVmQtamRx/b1BmSkY4dlJRSGFI/YSZwaWQ9QXBp" />
+        <h1>is this a gift order?</h1>
+        <div id="mes"><h1>ADD MESSAGE</h1></div>  
+    </div>
+
+    <div id="main2">
+        <img id="gift2" src="https://imgs.search.brave.com/e9oOJxdzy9RUOzuOOFWvnXvx_mhYnIPv0luYjOv9Hac/rs:fit:660:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/Q0VWa0s0UlRGQ1VJ/S2tjaVlvTjdnSGFG/VSZwaWQ9QXBp" />
+        <h1>Delivery Options</h1>
+        <h2>1 Shipment, Delivery Charge: Rs 50</h2>
+        <div id="mes2"><h1>CHANGE</h1></div>  
+    </div>
+
+    <div id="main3">
+        <img id="gift3" src="https://cdn-icons-png.flaticon.com/512/469/469058.png?w=740" />
+        <h1>Payment Options</h1>
+      
     </div>
 </body>
 </html>
 
-
+<!-- <.............########.............> -->
 
 <script>
 var btn2= document.getElementById("b1");
@@ -137,12 +148,6 @@ var btn=document.getElementById("butn1");
 
 var ip=document.getElementsByTagName("input");
 
-function ipe(){
-    if(ip.textContent=""){
-        window.alert("not to display")
-    }
-
-}
 
 function changecolor2(){
     btn2.style.color="green";
@@ -150,22 +155,22 @@ function changecolor2(){
     btn3.style.color="gray";
     btn3.style.borderColor="white";
     btn4.style.color="gray";
-    btn4.style.borderColor="white";
-    
-    
-    
+    btn4.style.borderColor="white"; 
+
+    inp.style.display="none" 
 }
+
 function changecolor3(){
     btn3.style.color="green";
     btn3.style.borderColor="green";
     btn2.style.color="gray";
     btn2.style.borderColor="white";
     btn4.style.color="gray";
-    btn4.style.borderColor="white";
-    
-  
-   
+    btn4.style.borderColor="white"; 
+
+    inp.style.display="none"
 }
+
 function changecolor4(){
     btn4.style.color="green";
     btn4.style.borderColor="green";
@@ -181,18 +186,21 @@ function changecolor4(){
 
     inp.append(div1)
 
+    inp.style.display="flex"
 }
 
-
-
-
+function nextpage(){
+    window.location.href="./paymentopt.html"
+}
 
 function change(){
     btn.style.backgroundColor="black";
 }
+
 function againchange(){
     btn.style.backgroundColor="grey"
 }
+
 
 btn2.addEventListener('click',changecolor2)
 btn3.addEventListener('click',changecolor3)
@@ -200,4 +208,5 @@ btn4.addEventListener('click',changecolor4)
 btn.addEventListener('mouseover',change)
 btn.addEventListener('mouseleave',againchange)
 btn.addEventListener('click',ipe)
+
 </script>
