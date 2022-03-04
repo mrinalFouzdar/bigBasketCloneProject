@@ -96,9 +96,27 @@
            <div id="li"></div> <li>Excludes Baby Cereals, Baby Foods, Infant Formula and Organic Baby Foods from redemption </li>
         </ul>
         <div id="list"></div> 
-        <button>Shop Now</button>
+        <button id="butn">Shop Now</button>
 
        
     </div>
 </body>
 </html>
+
+<script>
+
+    var shop= document.getElementById("butn");
+    shop.addEventListener('mouseover',now)
+    shop.addEventListener('mouseleave',now1)
+    shop.addEventListener('click',link)
+
+    function now(){
+        shop.style.backgroundColor="rgba(2, 135, 53, 0.9)";
+    }
+    function now1(){
+        shop.style.backgroundColor="rgb(2,135,54)";
+    }
+    function link(){
+        window.location.href="../homepage/home.html"
+    }
+</script>

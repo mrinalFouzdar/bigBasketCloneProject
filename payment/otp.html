@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="otp.css"/>
+   <style>
+    
+   </style>
+</head>
+<body>
+    <img src="https://www.bigbasket.com/static/v2489/common/img/bb_logo.png">
+    <!-- <div>
+        <input type="password" placeholder="Enter OTP"><button onclick="otp()">submit</button>
+    </div> -->
+
+    <div id="main">
+        <div id="rupay">
+            <img src="https://imgs.search.brave.com/kaGj4q-5cBakTVxocLgvTak9j4j8FfvOPnyCCxRbSM0/rs:fit:1728:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5C/cWxtZUZqWXJHZEFn/LWpvWjBzNGN3SGFD/QyZwaWQ9QXBp"/>
+        </div>
+        
+        <div id="sug">Please enter your One Time password(OTP) sent to your registered Mobile No:</div>
+        <div id="det">
+            <div id="topic">
+                <h1>Card No</h1>
+                <h1>Merchant</h1>
+                <h1>Amount</h1>
+                <h1>Enter the OTP</h1>
+            </div>
+            <div id="ans">
+                <h1>XXXXXXXXXXXX8915</h1>
+                <h1>BIGBASKET</h1>
+                <h1>......Rs</h1>
+                <input type="password"/>
+            </div>    
+        </div>
+        <div id="res">Resent OTP</div>
+        <div id="btn">
+            <button id="submit" onclick="otp()">SUBMIT</button>
+            <button id="cancel" onclick="home()">CANCEL</button>
+        </div>
+        <div id="data">Your transaction is processed through a secure 128 bit https internet connection based on secure socket layer technology. </div>
+        <div id="logo">
+            <img id="im" src="https://imgs.search.brave.com/45NyBubxA11upANDb39sxtqPVK5x0L6LU5HEp2JoxpU/rs:fit:625:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC40/Zy10YWxwbXVGLXZQ/SksyYnhvRjh3SGFG/biZwaWQ9QXBp"/>
+            <img src="https://imgs.search.brave.com/bEnIAkAOim8uhqTYUCc_tpBin8ZwVuJHvQozvdxYFK8/rs:fit:490:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5B/YUpZV2VhZXpodjB1/N3ZGdGlYNllBSGFI/SyZwaWQ9QXBp"/>
+        </div>
+    </div>
+  
+</body>
+</html>
+<script>
+    function otp(){
+    var enter = document.querySelector("input").value
+    if(enter == 1234)
+    {
+       
+             window.location.href="successfull.html"
+             alert("Order Placed Successfully")
+    }
+    else{
+        alert("invalid otp")
+    }
+    }
+</script>
+
+<script>
+    var submit= document.getElementById("submit");
+   
+    submit.addEventListener('mouseover',grey);
+    submit.addEventListener('mouseleave',red);
+ 
+function grey(){
+    submit.style.backgroundColor="black" 
+}
+function red(){
+    submit.style.backgroundColor="rgb(236,28,37)"
+}
+
+
+
+function home(){
+    window.location.href="../homepage/home.html"
+}
+</script>
+
+<script>
+     var cancel= document.getElementById("cancel");
+       cancel.addEventListener('mouseleave',red);
+    cancel.addEventListener('mouseover',grey);
+    function grey(){
+    cancel.style.backgroundColor="black" 
+}
+function red(){
+    cancel.style.backgroundColor="rgb(236,28,37)"
+}
+
+
+
+</script>

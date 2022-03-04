@@ -1,0 +1,108 @@
+button{
+    background-color: yellowgreen;
+ border: none;
+ padding: 3px;
+
+}
+div{
+   display:flex;
+   justify-content: center;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    width: 345px;
+    border:1px solid grey;
+    margin:auto;
+    font-family: arial;
+}
+#rupay{
+    width:100%;
+    height: 10%;
+    background-color: rgb(1,74,142);
+    padding-top: 4%;
+}
+#rupay img{
+    width:25%;
+    height: 15px;
+    margin-left: 65%;
+}
+#sug{
+    padding:5% 4%;
+    text-align: center;
+    font-size: 90%;
+    background-color: white;
+}
+#det{
+    display:flex;
+    flex-direction: row;
+    background-color: white;
+}
+#det div{
+    display: flex;
+    flex-direction: column;
+    margin:3%;
+}
+#topic h1{
+    font-size: 90%;
+    color:grey;
+    padding-left: 1%;
+}
+#ans{
+    padding-bottom: 6%;
+}
+#ans h1{
+    font-size: 90%;
+    font-weight: 400;
+}
+input{
+    border-top:none;
+    border-left:none; border-right:none;
+    border-bottom: 1px solid black;
+    width: 50%;
+    margin-top:9%;
+}
+#res{
+    padding-top: 13%;
+    padding-left: 62%;
+    color:rgba(255, 0, 0, 0.767);
+    font-size:90%;
+    background-color: white;
+    
+}
+#btn{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+#btn button{
+    background-color: rgb(236,28,37);
+    margin-left:4%;
+    margin-right:4%;
+    margin-top: 4%;
+    border-radius: 5%;
+    padding:2% 10%;
+    color:white;
+    font-weight: bolder;
+    border-bottom:8px solid rgb(171,4,11);
+    
+}
+#data{
+    padding:4%;
+    font-size: 90%;
+    background-color: white;
+}
+#logo{
+    background-color:white;
+    padding-bottom: 1%;
+}
+#logo img{
+    width: 10%;
+    height: 10%;
+
+
+}
+#im{
+    margin-right: 72%;
+}

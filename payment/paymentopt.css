@@ -1,3 +1,45 @@
+
+#flex{
+    margin-left: 6px;
+    margin-bottom: 10px;
+}
+#gift{
+    width: 25px;
+    height: 20px;
+}
+
+#main1{
+    width: 800px;
+   display: flex;
+    border: 1px solid rgb(150,151,150);
+    margin-top: 20px;
+    font-family:arial;
+    padding: 15px;
+    margin-left: 75px; 
+}
+#main1 h1{
+    color:rgb(185, 184, 184);
+    font-size: 15px;
+    font-weight:bold;   
+}
+
+#mes{
+    margin-left: 490px;
+}
+#mes h1{
+    border-bottom-width: 100px;
+    padding:5px 16px;
+    font-size: 13px;
+    font-weight: 300;
+    color:rgba(63, 62, 62, 0.993);
+    border: 1px solid rgba(63, 62, 62, 0.993) ;
+}
+
+
+
+
+
+
 #main{
     border: 1px solid rgb(175, 175, 184);
     width: 62.5%;
@@ -94,7 +136,7 @@ border-bottom:1px solid white;
     padding:10%;  
 }
 #one{
-    background-color: rgb(246,246,247);
+    background-color: rgb(246, 247, 247);
 }
 #payment{
     background-color:rgb(246,246,247);
@@ -193,7 +235,7 @@ input{
     text-align: center;
     padding:3%;
     color:white;
-    background-color:rgb(218,237,190);
+    background-color:rgb(157, 201, 91);
 }
 #la{
 
@@ -207,7 +249,9 @@ margin-left: 1%;
     
 } 
 
-
+#submain3{
+    display: none;
+}
 
 #submain3 > div{
      

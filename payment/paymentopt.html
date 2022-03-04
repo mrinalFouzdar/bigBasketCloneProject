@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="paymentopt.css"/>
 </head>
 <body style="background-color: white;">
+
+<div id="flex">
+
+    <div id="main1">
+        <img id="gift" src="https://cdn-icons-png.flaticon.com/128/446/446075.png" />
+        <h1>Delivery Address</h1>
+        <div id="mes"><h1>CHANGE</h1></div>  
+    </div>
+
+    <div id="main1">
+        <img id="gift" src="https://imgs.search.brave.com/cCbU0Hm2OBvo_S-NmKU3e7Jb3bKdPtYwePqFVgP-DX0/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5B/bjlLalpCVmQtamRx/b1BmSkY4dlJRSGFI/YSZwaWQ9QXBp" />
+        <h1>is this a gift order?</h1>
+        <div id="mes"><h1>ADD MESSAGE</h1></div>  
+    </div>
+
+    <div id="main1">
+        <img id="gift" src="https://imgs.search.brave.com/e9oOJxdzy9RUOzuOOFWvnXvx_mhYnIPv0luYjOv9Hac/rs:fit:660:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/Q0VWa0s0UlRGQ1VJ/S2tjaVlvTjdnSGFG/VSZwaWQ9QXBp" />
+        <h1>Delivery Option</h1>
+        <div id="mes"><h1>CHANGE</h1></div>  
+    </div>
+
+</div>
+
+
     <div id="main"> 
         <div id="pment">
         <img src="https://cdn-icons-png.flaticon.com/512/469/469058.png?w=740"/>
@@ -174,6 +198,22 @@
 <!-- <..........#..........> -->
 
 <script>
+
+
+  
+function alt(){
+    var enter=document.querySelector("input").value;
+
+    if(enter!=""){
+        window.location.href="./otp.html"
+    }
+    else {
+        alert("Please enter the Card details")
+    }
+     
+  }
+
+
   
  var sub1=document.getElementById("sub1");
  var sub2=document.getElementById("sub2");
@@ -182,10 +222,7 @@
   sub2.addEventListener('click',color1);
   sub2.addEventListener('click',hide);
   sub1.addEventListener('click',show);
-  
-  function alt(){
-      alert("Order Placed Successfully");
-  }
+
   function color(){
       sub1.style.borderBottomColor="white";
       sub2.style.borderBottomColor="rgb(175, 175, 184)";
@@ -209,7 +246,7 @@
           pay.style.backgroundColor="rgb(133,195,37)";
       }
       else {
-          pay.style.backgroundColor="rgb(218,237,190)";
+          pay.style.backgroundColor="rgb(157, 201, 91)";
       } 
   }
 

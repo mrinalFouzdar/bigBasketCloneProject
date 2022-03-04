@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 700px;
+            
+        }
+        div{
+            margin-top: 3%; 
+            background-color: white;
+            width:700px;
+            font-family: arial;
+            padding-bottom: 1%;
+            color:white
+        }
+        h1{
+            font-weight:700;
+         
+            background-color: green;
+            display: inline;
+            padding:1% 4%;
+            font-size: 90%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+        <img src="http://www.shikharclasses.in/wp-content/uploads/2020/04/PAYMENT-SUCCESS.png.">
+
+        <h1 id="go" onclick="retur()" >DONE</h1>
+    </div>
+    </center>
+    
+</body>
+</html>
+
+<script>
+    var good=document.getElementById("go");
+    good.addEventListener('mouseover',change)
+    good.addEventListener('mouseleave',change1)
+
+    function change(){
+        good.style.backgroundColor="rgb(53,183,41)"
+    }
+    function change1(){
+        good.style.backgroundColor="green"
+    }
+
+
+
+    function retur(){
+        window.location.href="../homepage/home.html"
+    }
+</script>
