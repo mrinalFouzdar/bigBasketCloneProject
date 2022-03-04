@@ -25,6 +25,26 @@
 
 #mes{
     margin-left: 490px;
+}#mes1{
+    margin-left:500px;
+}#mes1 h1{
+    border-bottom-width: 100px;
+    padding:5px 35px;
+    font-size: 13px;
+    font-weight: 300;
+    color:rgba(63, 62, 62, 0.993);
+    border: 1px solid rgba(63, 62, 62, 0.993) ;
+} 
+#mes2{
+    margin-left: 515px;
+}
+#mes2 h1{
+    border-bottom-width: 100px;
+    padding:5px 35px;
+    font-size: 13px;
+    font-weight: 300;
+    color:rgba(63, 62, 62, 0.993);
+    border: 1px solid rgba(63, 62, 62, 0.993) ;
 }
 #mes h1{
     border-bottom-width: 100px;
