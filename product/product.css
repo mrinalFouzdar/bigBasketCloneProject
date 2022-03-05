@@ -216,41 +216,6 @@
 
 /* sign in page */
 
-#sign_in_box {
-    display: none;
-    /* flex-direction: column; */
-    flex-direction: column;
-    position: fixed;
-    top: 100px;
-    left: 520px;
-    height: 70%;
-    width: 30%;
-    border: 1px solid black;
-    padding: 10px;
-    background-color: white;
-    box-sizing: border-box;
-    z-index: 1000;
-}
-
-#sign_in_box>span {
-    margin-left: 95%;
-    color: brown;
-    cursor: pointer;
-}
-
-#number_email,
-#name {
-    margin: 10px;
-    margin-bottom: 50px;
-    padding: 10px;
-    border: none;
-    border-bottom: 1px solid rgb(24, 24, 27);
-}
-
-#showname {
-    color: #84c225;
-}
-
 
 /* image rotate*/
 
