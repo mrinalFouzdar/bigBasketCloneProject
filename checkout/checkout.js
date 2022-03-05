@@ -60,6 +60,7 @@
 // }
 
 let cartArr = JSON.parse(localStorage.getItem("cartitems"))
+console.log(cartArr)
 
 if (cartArr == null) {
     localStorage.setItem(JSON.stringify([]));
