@@ -1,63 +1,63 @@
-// 1> sign ing function.....
+// // 1> sign ing function.....
 
-let sign_in_box = document.getElementById("sign_in_box")
-
-
-
-
-let user_data_log = JSON.parse(localStorage.getItem("user_data"))
-console.log(user_data_log)
-
-if (user_data_log.length > 0) {
-    let show_name = document.getElementById("show_name")
-    document.querySelector(".signin").style.display = "none"
-
-    show_name.textContent = ` ${user_data_log[user_data_log.length-1].name}`
-        //   cart_page()
-} else {
-    localStorage.setItem("user_data", JSON.stringify([]))
-
-}
-
-
-let signin = () => {
-    sign_in_box.style.display = "flex"
-}
-
-let cut_page = () => {
-    sign_in_box.style.display = "none"
-}
+// let sign_in_box = document.getElementById("sign_in_box")
 
 
 
-let data_submit = () => {
-    let number = document.getElementById("number_email").value;
-    let name = document.getElementById("name").value;
 
-    if (name != "") {
-        let obj = {
-            number: number,
-            name: name,
-        }
-        localStorage.setItem("user_data", JSON.stringify([]))
+// let user_data_log = JSON.parse(localStorage.getItem("user_data"))
+// console.log(user_data_log)
 
-        user_data_log = JSON.parse(localStorage.getItem("user_data"))
-        user_data_log.push(obj)
-            // console.log(user_data[user_data.length-1].name)
-        let show_name = document.getElementById("show_name")
-        show_name.textContent = ` ${user_data_log[user_data_log.length-1].name}`
-        localStorage.setItem("user_data", JSON.stringify(user_data_log))
-        let sign_none = document.querySelector(".signin")
-            // console.log(sign_none)
-        sign_none.style.display = "none"
-        cut_page()
+// if (user_data_log.length > 0) {
+//     let show_name = document.getElementById("show_name")
+//     document.querySelector(".signin").style.display = "none"
 
-    } else {
-        alert("Invalid Information")
-        cut_page()
+//     show_name.textContent = ` ${user_data_log[user_data_log.length-1].name}`
+//         //   cart_page()
+// } else {
+//     localStorage.setItem("user_data", JSON.stringify([]))
 
-    }
-}
+// }
+
+
+// let signin = () => {
+//     sign_in_box.style.display = "flex"
+// }
+
+// let cut_page = () => {
+//     sign_in_box.style.display = "none"
+// }
+
+
+
+// let data_submit = () => {
+//     let number = document.getElementById("number_email").value;
+//     let name = document.getElementById("name").value;
+
+//     if (name != "") {
+//         let obj = {
+//             number: number,
+//             name: name,
+//         }
+//         localStorage.setItem("user_data", JSON.stringify([]))
+
+//         user_data_log = JSON.parse(localStorage.getItem("user_data"))
+//         user_data_log.push(obj)
+//             // console.log(user_data[user_data.length-1].name)
+//         let show_name = document.getElementById("show_name")
+//         show_name.textContent = ` ${user_data_log[user_data_log.length-1].name}`
+//         localStorage.setItem("user_data", JSON.stringify(user_data_log))
+//         let sign_none = document.querySelector(".signin")
+//             // console.log(sign_none)
+//         sign_none.style.display = "none"
+//         cut_page()
+
+//     } else {
+//         alert("Invalid Information")
+//         cut_page()
+
+//     }
+// }
 
 let cartArr = JSON.parse(localStorage.getItem("cartitems"))
 

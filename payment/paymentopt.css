@@ -1,309 +1,320 @@
-
-#flex{
+#flex {
     margin-left: 6px;
     margin-bottom: 10px;
 }
-#gift{
+
+#gift {
     width: 25px;
     height: 20px;
 }
 
-#main1{
+#main1 {
     width: 800px;
-   display: flex;
-    border: 1px solid rgb(150,151,150);
+    display: flex;
+    border: 1px solid rgb(150, 151, 150);
     margin-top: 20px;
-    font-family:arial;
+    font-family: arial;
     padding: 15px;
-    margin-left: 75px; 
-}
-#main1 h1{
-    color:rgb(185, 184, 184);
-    font-size: 15px;
-    font-weight:bold;   
+    margin-left: 75px;
 }
 
-#mes{
+#main1 h1 {
+    color: rgb(185, 184, 184);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#mes {
     margin-left: 490px;
 }
-#mes h1{
+
+#mes h1 {
     border-bottom-width: 100px;
-    padding:5px 16px;
+    padding: 5px 16px;
     font-size: 13px;
     font-weight: 300;
-    color:rgba(63, 62, 62, 0.993);
-    border: 1px solid rgba(63, 62, 62, 0.993) ;
+    color: rgba(63, 62, 62, 0.993);
+    border: 1px solid rgba(63, 62, 62, 0.993);
 }
 
-
-
-
-
-
-#main{
+#main {
     border: 1px solid rgb(175, 175, 184);
     width: 62.5%;
-    
     margin-left: 6%;
     font-family: arial;
 }
-h1{
+
+h1 {
     margin-top: 1%;
     font-size: 17px;
-    color:rgb(103,102,103);
+    color: rgb(103, 102, 103);
 }
-#pment{
-    padding-left:2%;
+
+#pment {
+    padding-left: 2%;
     padding-top: 1%;
     padding-bottom: 1%;
     display: flex;
     flex-direction: row;
     height: 10%;
 }
-img{
+
+img {
     margin-top: 1%;
-    width:2%;
+    width: 2%;
     height: 2%;
     margin-right: 1%;
 }
 
-#submain{
-    border-top:1px solid rgb(175, 175, 184);
-    border-bottom:1px solid white;
-    background-color: rgb(246,246,247);
+#submain {
+    border-top: 1px solid rgb(175, 175, 184);
+    border-bottom: 1px solid white;
+    background-color: rgb(246, 246, 247);
     display: flex;
     /* padding-left: 1%; */
-    padding-top:2%;
+    padding-top: 2%;
     /* padding-right:1%; */
     height: 1%;
-    margin-bottom:2%;
+    margin-bottom: 2%;
 }
-#submain  > #sub1,#sub2{
-  
+
+#submain>#sub1,
+#sub2 {
     width: 48%;
-   
     background-color: white;
-  /* margin:0 1%; */
-  padding:1.5% 2%;
-  border-top:1px solid rgb(175, 175, 184);
-  border-left:1px solid rgb(175, 175, 184);
-  border-right:1px solid rgb(175, 175, 184);
-  border-bottom:1px solid rgb(175, 175, 184);
-}
-#sub2{
-border-bottom:1px solid white;
-}
-#sub1{
-    background-color: rgb(252,253,253);
-}
- 
-#submain #short{
-    width:2%;
+    /* margin:0 1%; */
+    padding: 1.5% 2%;
+    border-top: 1px solid rgb(175, 175, 184);
+    border-left: 1px solid rgb(175, 175, 184);
+    border-right: 1px solid rgb(175, 175, 184);
     border-bottom: 1px solid rgb(175, 175, 184);
 }
-#submain h1{
-    font-size:90%;
+
+#sub2 {
+    border-bottom: 1px solid white;
+}
+
+#sub1 {
+    background-color: rgb(252, 253, 253);
+}
+
+#submain #short {
+    width: 2%;
+    border-bottom: 1px solid rgb(175, 175, 184);
+}
+
+#submain h1 {
+    font-size: 90%;
     font-weight: 510;
 }
-#submain h2{
+
+#submain h2 {
     font-size: 80%;
-    color:rgb(175, 175, 184);
+    color: rgb(175, 175, 184);
     font-weight: 500;
 }
-#submain h1,h2{
+
+#submain h1,
+h2 {
     line-height: 75%;
 }
 
-
-
- #submain2{
-   padding:0 2%;
-   padding-bottom: 2%;
+#submain2 {
+    padding: 0 2%;
+    padding-bottom: 2%;
     display: flex;
-  
 }
 
-#options{
+#options {
     width: 20%;
-  
     border-left: 1px solid rgb(175, 175, 184);
     border-top: 1px solid rgb(175, 175, 184);
-    
 }
-#options  div{
+
+#options div {
     border-bottom: 1px solid rgb(175, 175, 184);
     font-size: 80%;
-    padding:10%;  
+    padding: 10%;
 }
-#one{
+
+#one {
     background-color: rgb(246, 247, 247);
 }
-#payment{
-    background-color:rgb(246,246,247);
+
+#payment {
+    background-color: rgb(246, 246, 247);
     width: 80%;
     border: 1px solid rgb(175, 175, 184);
-    padding:2% 3%;
-   
+    padding: 2% 3%;
 }
-#payment > div{   
+
+#payment>div {
     border: 1px solid rgb(175, 175, 184);
 }
 
-#card{
+#card {
     background-color: white;
 }
-#card img{
-   width: 4%;
-   height: 4%;
-   margin:3%;
-   
-}
-#card h1{
-    color:black;
-    margin:4% 0;
-    font-size: 80%;
 
+#card img {
+    width: 4%;
+    height: 4%;
+    margin: 3%;
 }
+
+#card h1 {
+    color: black;
+    margin: 4% 0;
+    font-size: 80%;
+}
+
 #radio {
     display: flex;
     flex-direction: row;
 }
-#details{
-  
+
+#details {
     margin-top: 2%;
     margin-left: 11%;
     margin-right: 30%;
 }
-#details > div{
-   
+
+#details>div {
     margin-bottom: 5%;
 }
-#code{
+
+#code {
     display: flex;
     flex-direction: row;
 }
-#code > div{
-    padding-right:7%;
-    
+
+#code>div {
+    padding-right: 7%;
 }
-#code label{
+
+#code label {
     margin-bottom: 2%;
 }
-#code input{
+
+#code input {
     padding-bottom: 1%;
     padding-top: 1%;
-    
 }
-#first{
+
+#first {
     display: flex;
     flex-direction: column;
 }
-#first > div{
+
+
+/* #first > div{
   
-}
-#first label{
-    font-size:70%;
+} */
+
+#first label {
+    font-size: 70%;
     margin-left: 1%;
-   
- 
 }
-input{
-    padding:1%;
+
+input {
+    padding: 1%;
     font-size: 75%;
-    border-bottom:1px solid rgb(175, 175, 184);
-    border-top:1px solid white;
-    border-left:1px solid white;
-    border-right:1px solid white;
+    border-bottom: 1px solid rgb(175, 175, 184);
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
     margin-top: 1%;
     margin-bottom: 4%;
 }
-#check{
+
+#check {
     display: flex;
     flex-direction: row;
     font-size: 70%;
-   
 }
-#check label{
+
+#check label {
     margin-top: 1%;
     margin-left: 1%;
-   
 }
-#pay{
+
+#pay {
     margin-left: 1%;
-    
     width: 50%;
     text-align: center;
-    padding:3%;
-    color:white;
-    background-color:rgb(157, 201, 91);
+    padding: 3%;
+    color: white;
+    background-color: rgb(157, 201, 91);
 }
-#la{
 
-width: 25%;
-margin-left: 1%;
-
+#la {
+    width: 25%;
+    margin-left: 1%;
 }
-#la img{
+
+#la img {
     width: 17%;
     height: 50%;
-    
-} 
+}
 
-#submain3{
+#submain3 {
     display: none;
 }
 
-#submain3 > div{
-     
-     padding-top:2%;
-     padding-left:2%;
-     padding-right: 2%;
-     padding-bottom: 0%;
-     margin-bottom:1%;
-     margin-left:1%;
-     margin-right:1%;
-     margin-top:0%;
- 
+#submain3>div {
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 0%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 0%;
 }
-#paytm{
+
+#paytm {
     display: flex;
     border: 1px solid rgb(175, 175, 184);
 }
 
-#rad{
+#rad {
     width: 20px;
     height: 20px;
-    color:red;
+    color: red;
     margin-top: 1.5%;
 }
-#img{
+
+#img {
     width: 3%;
-    margin-left:1.5% ;
-   
+    margin-left: 1.5%;
 }
-#py{
-    margin-left: 1.5%; 
+
+#py {
+    margin-left: 1.5%;
     text-align: start;
     line-height: 1%;
 }
-#py h1{
+
+#py h1 {
     font-size: 80%;
     font-weight: 400;
     color: black;
-    
-}
-#py h2{
-    font-size: 73%;
-    color:rgba(6, 138, 6, 0.678);
-    font-weight: 300;
-}
-#offer{
-    display: flex;
-}
-#per{
-    width:2%;
-}
-#offer h2{
-    line-height: 100%;
 }
 
+#py h2 {
+    font-size: 73%;
+    color: rgba(6, 138, 6, 0.678);
+    font-weight: 300;
+}
+
+#offer {
+    display: flex;
+}
+
+#per {
+    width: 2%;
+}
+
+#offer h2 {
+    line-height: 100%;
+}
