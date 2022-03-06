@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="descreption.css" -->
+
+    <style>
+        #main{
+            background-color: white;
+            border: 10px solid rgba(233, 233, 240, 0.432);
+            width: 1000px;
+            margin: auto;
+            font-family: arial;
+            
+        
+        }
+        #main img{
+            margin:3% 37%;
+         width: 25%;
+        align-self: auto;
+        }
+        #main h1{
+            color:orange;
+            text-align: center;
+            font-family: arial;
+            font-size: 125%;
+            border:1px solid  rgba(154, 154, 156, 0.438);                              
+            margin-top:2%;
+            margin-bottom: 2%;
+            margin-right: 35%; 
+            margin-left: 38%;
+            padding-top: 1%;
+            padding-bottom:1% ;
+            border-radius: 5%;
+        }
+        ul{
+            line-height: 200%;
+            font-size: 80%;;
+        }
+        #list{
+            border:1px solid rgba(154, 154, 156, 0.151);
+            padding:1px;
+        }
+        #li{
+            border:1px solid rgba(154, 154, 156, 0.082);
+            padding:1px; 
+            margin:0 2%;
+        }
+        button{
+            background-color:rgb(2,135,54);
+            color:white;
+            margin:2% 35%;
+            border:1px solid rgb(2,135,54);
+            padding:1% 6%;
+            font-weight: 500;
+            font-size: 120%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <div style="border:1px solid rgba(233, 233, 240, 0.432); padding:4%;" </div>
+
+
+
+    <div id="main">
+        <img src="https://imgs.search.brave.com/0oD7tq2joiKFWJnctn0dzYPJIePRWLxzzD9f6qqNI8Q/rs:fit:729:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Y/bS15aGdBX00wb090/ekRNWmZWY2ZnSGFF/MCZwaWQ9QXBp"/>
+        <h1>TERM AND CONDITIONS</h1>
+<div id="list"></div> 
+        <ul>
+            <li>Use code: CITIMAR2</li><div id="li"></div>
+            <li>Rs.250 instant discount on Citi Credit & Debit Cards</li>
+           <div id="li"></div> <li>Rs.250 instant discount on Citi Credit & Debit Cards</li>
+           <div id="li"></div> <li>User is eligible to transact from the same bb account for the second time and use another card to be eligible for the offer</li>
+           <div id="li"></div> <li>Valid once per card during the offer period</li>
+           <div id="li"></div> <li>Offer valid on Citibank Credit & Debit Cards</li>
+           <div id="li"></div> <li>Offer applicable on website, app & m-site</li>
+           <div id="li"></div> <li>Offer is not valid on Citi Corporate Cards</li>
+           <div id="li"></div> <li>Add on cards will be treated as separate cards</li>
+           <div id="li"></div> <li>In the event orders are fully cancelled (during & outside the Offer Period), the corresponding instant
+                savings applicable on that order / transaction will not be granted</li>
+           <div id="li"></div> <li>If bigbasket wallet credit is used at the time of placing the order, the voucher cannot be applied after the order is placed in 'Pay Now' option</li>
+           <div id="li"></div> <li>Cannot be clubbed with any other offer Offer</li>
+           <div id="li"></div> <li>Valid between 1st - 5th March 2022</li>
+           <div id="li"></div> <li> Offer valid only on payments made online</li>
+           <div id="li"></div> <li> bigbasket has the right to cancel orders if found to be of fraudulent nature</li>
+           <div id="li"></div> <li> bigbasket reserves the right to change / modify / add / delete any of the terms and conditions of the offer at any time without notice</li>
+           <div id="li"></div> <li>Offer not applicable when the payment is made on card on delivery </li>
+           <div id="li"></div> <li>Excludes Baby Cereals, Baby Foods, Infant Formula and Organic Baby Foods from redemption </li>
+        </ul>
+        <div id="list"></div> 
+        <button id="butn">Shop Now</button>
+
+       
+    </div>
+</body>
+</html>
+
+<script>
+
+    var shop= document.getElementById("butn");
+    shop.addEventListener('mouseover',now)
+    shop.addEventListener('mouseleave',now1)
+    shop.addEventListener('click',link)
+
+    function now(){
+        shop.style.backgroundColor="rgba(2, 135, 53, 0.9)";
+    }
+    function now1(){
+        shop.style.backgroundColor="rgb(2,135,54)";
+    }
+    function link(){
+        window.location.href="../homepage/home.html"
+    }
+</script>

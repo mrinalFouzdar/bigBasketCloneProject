@@ -36,7 +36,7 @@ function plusSlides(position) {
     if (i == slide1_img.length) {
         i = 0
     }
-    if (i < 0) {
+    if (i <= 0) {
         i = (slide1_img.length - 1)
     }
     img.src = slide1_img[i];
@@ -44,6 +44,14 @@ function plusSlides(position) {
 }
 
 //<3> after 1st slide show  grid picture
+
+
+//redirect bank page
+// bank_click.addEventListener("click")
+// function bankpage(){
+
+//     window.location.href="./bankpage.html"
+// } 
 
 
 
@@ -189,8 +197,10 @@ if (user_data_log == null) {
 let data_submit = () => {
     let number = document.getElementById("number_email").value;
     let name = document.getElementById("name").value;
+    let pass=document.getElementById("pass").value
 
-    if (name != "") {
+
+    if (pass.length >7) {
         let obj = {
             number: number,
             name: name,
@@ -212,8 +222,11 @@ let data_submit = () => {
         cut_page()
 
     } else {
-        alert("Invalid Information")
+        alert("Plz Put Strong Password")
         cut_page()
 
     }
 }
+
+
+
