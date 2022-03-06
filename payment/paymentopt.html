@@ -56,10 +56,9 @@
             <div id="options">
                 <div id="one">Credit/Debit Card</div>
                 <div id="two">Netbanking</div>
-                <div>UPI</div>
-                <div>Wallet</div>
-                <div>Pay Later</div>
-                <div>Cash/Card on Delivery</div>
+                <div id="three">UPI</div>
+                <div>Wallet</div>  
+                <div id="five">Cash/Card on Delivery</div>
             </div>
             <div id="payment">
                 <div id="card">
@@ -105,6 +104,78 @@
 
                     </div>
                 </div>
+
+
+                <div id="netb">
+                    <h1>Frequently Used Banks</h1>
+                    <div id="banks">
+                        <input type="radio"/>
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_607152.png" />
+                        <p>HDFC Bank</p>
+                    </div>
+                    <div id="banks">
+                        <input type="radio"/>
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_508534.png" />
+                        <p>ICICI Netbanking</p>
+                    </div>
+                    <div id="banks">
+                        <input type="radio"/>
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_508548.png" />
+                        <p>State Bank of India</p>
+                    </div>
+
+                    <h1 id="moreb">More Banks</h1>
+                    <div id="bank"><input id="searchb" type="text" placeholder="Search banks"/></div>
+                </div>
+
+
+                <div  id="card1">
+                    <div id="radio">
+                        <img src="https://imgs.search.brave.com/woR_N9Hko-DS-55woXBLuIbczu7qggR0MZZkP_YtqNI/rs:fit:200:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Q/NnFmQ3hobDZ0aU1w/bXYtMG5SUkpBQUFB/QSZwaWQ9QXBp"/>
+                           <h1>Add Credit / Dedit Card</h1>
+                           </div>
+                           <div id="details">
+                               <div>
+                                   <div id="first">
+                                       <label>UPI ID</label>
+                                       <input type="text" placeholder="user@bankname" id=""/>
+                                       <p>A payment request will be sent to this UPI ID</p>
+                                   </div>
+                               </div>
+                               
+                               <!-- <div id="code">
+                                   <div id="first">
+                                       <label>Valid Thru</label>
+                                       <input type="text" placeholder="MM / YY" id=""/>
+                                   </div>
+       
+                                   <div id="first">
+                                       <label>CVV</label>
+                                       <input type="text" placeholder="Security Code" id=""/>
+                                   </div>
+                               </div>
+                               
+       
+                               <div>
+                                   <div id="check">
+                                      <input type="checkbox" id="checkme" onclick="checkbox()" />
+                                      <label for="scale"> Save this card for faster payment </label>
+                                      <div id="la"  onclick="alrt()" ><img  src="https://imgs.search.brave.com/96Vs3S0kG1Mi6REIT3of_7IQkDclPzzw8-1QVNwdzBw/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5j/Q2R4b19GR0E0SFIy/QjAzOGpZdExBSGFI/YSZwaWQ9QXBp"/></div>
+                                   </div>
+                               </div> -->
+       
+                               <div>
+                                   <div id="pay" onclick="alt()">
+                                      Verify
+                                   </div>
+                               </div>
+       
+       
+       
+                           </div>
+                </div>
+                <div style="margin-top:20%"></div>
+
             </div>
         </div>
 
@@ -215,8 +286,6 @@ function alt(){
      
   }
 
-
-  
  var sub1=document.getElementById("sub1");
  var sub2=document.getElementById("sub2");
 
@@ -228,14 +297,14 @@ function alt(){
   function color(){
       sub1.style.borderBottomColor="white";
       sub2.style.borderBottomColor="rgb(175, 175, 184)";
-      sub2.style.backgroundColor="rgb(252,253,253)";
+      sub2.style.backgroundColor="rgba(246, 246, 247, 0.315)";
       sub1.style.backgroundColor="white";
   }
 
   function color1(){
       sub2.style.borderBottomColor="white";
       sub1.style.borderBottomColor="rgb(175, 175, 184)"
-      sub1.style.backgroundColor="rgb(252,253,253)";
+      sub1.style.backgroundColor="rgba(246, 246, 247, 0.315)";
       sub2.style.backgroundColor="white";
   }
 
@@ -269,7 +338,47 @@ function show(){
 var submain2=document.getElementById("submain2");
 var submain3=document.getElementById("submain3");
 
+</script>
 
+
+<script>
+
+    var one=document.getElementById("one")
+    var two=document.getElementById("two")
+    var three=document.getElementById("three")
+    var card=document.getElementById("card")
+    var netb=document.getElementById("netb")
+    var upi=document.getElementById("card1")
+
+    one.addEventListener('click',one1)
+    two.addEventListener('click',two1)
+    three.addEventListener('click',three1)
+    
+    function one1(){
+        two.style.backgroundColor="white"
+        one.style.backgroundColor="rgb(246, 247, 247)"
+        three.style.backgroundColor="white"
+        card.style.display="block"        
+        netb.style.display="none"
+        upi.style.display="none"
+    }
+    function two1(){
+        one.style.backgroundColor="white"
+        two.style.backgroundColor="rgb(246, 247, 247)"
+        three.style.backgroundColor="white"
+        card.style.display="none"        
+        netb.style.display="inline"
+        upi.style.display="none"
+    }
+    function three1(){
+        one.style.backgroundColor="white"
+        two.style.backgroundColor="white"
+        three.style.backgroundColor="rgb(246, 247, 247)"
+        card.style.display="none"        
+        netb.style.display="none"
+        upi.style.display="block"
+        
+    }
 
 </script>
 

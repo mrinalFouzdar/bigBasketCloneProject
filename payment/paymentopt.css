@@ -101,7 +101,7 @@ img {
 #submain>#sub1,
 #sub2 {
     width: 48%;
-    background-color: white;
+  
     /* margin:0 1%; */
     padding: 1.5% 2%;
     border-top: 1px solid rgb(175, 175, 184);
@@ -111,11 +111,12 @@ img {
 }
 
 #sub2 {
+    background-color: white;
     border-bottom: 1px solid white;
 }
 
 #sub1 {
-    background-color: rgb(252, 253, 253);
+    background-color: rgba(246, 246, 247, 0.315);
 }
 
 #submain #short {
@@ -151,12 +152,14 @@ h2 {
     border-top: 1px solid rgb(175, 175, 184);
 }
 
-#options div {
+#options > div {
     border-bottom: 1px solid rgb(175, 175, 184);
     font-size: 80%;
-    padding: 10%;
+    padding:15% 10%;
 }
-
+#five{
+    padding:10% 10% !important;
+}
 #one {
     background-color: rgb(246, 247, 247);
 }
@@ -168,12 +171,12 @@ h2 {
     padding: 2% 3%;
 }
 
-#payment>div {
-    border: 1px solid rgb(175, 175, 184);
-}
+
+
 
 #card {
     background-color: white;
+    border: 1px solid rgb(175, 175, 184);
 }
 
 #card img {
@@ -187,6 +190,43 @@ h2 {
     margin: 4% 0;
     font-size: 80%;
 }
+#card p{
+    margin-top: 1px;
+    color:rgba(128, 128, 128, 0.733);
+    font-size: 60%;
+}
+
+
+
+
+
+
+#card1 {
+    display: none;
+    background-color: white;
+    border: 1px solid rgb(175, 175, 184);
+}
+
+#card1 img {
+    width: 4%;
+    height: 4%;
+    margin: 3%;
+}
+
+#card1 h1 {
+    color: black;
+    margin: 4% 0;
+    font-size: 80%;
+}
+#card1 p{
+    margin-top: 1px;
+    color:rgba(128, 128, 128, 0.733);
+    font-size: 60%;
+}
+
+
+
+
 
 #radio {
     display: flex;
@@ -227,9 +267,6 @@ h2 {
 }
 
 
-/* #first > div{
-  
-} */
 
 #first label {
     font-size: 70%;
@@ -276,6 +313,57 @@ input {
     width: 17%;
     height: 50%;
 }
+
+#netb{
+    display: none;
+}
+#netb > div{
+    background-color: white;
+    display:flex;
+    padding:0 4%;
+    
+}
+#banks{
+    margin-bottom: 2%;
+    border:1px solid rgb(175, 175, 184);
+
+}
+#banks input{
+    width: 3.5%;
+   height: 47px;
+   margin: 0%;
+}
+#banks img{
+    width: 4.5%;
+    margin:2% 4%;
+}
+#banks p{
+    font-size: 90%;
+    color: rgb(92, 90, 90);
+    font-weight:500;
+}
+#moreb{
+    font-size: 100%;
+    margin-top: 13%;
+}
+#searchb{
+    /* background-color: rgb(246, 246, 247); */
+
+}
+#bank{
+    display:flex;
+    margin-bottom: 2%;
+    border:1px solid rgb(175, 175, 184);
+    flex-direction: column;
+    background-color: rgb(246, 246, 247);
+}
+
+
+
+
+
+
+
 
 #submain3 {
     display: none;
